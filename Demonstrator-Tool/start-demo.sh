@@ -64,7 +64,7 @@ FRONTEND="$ROOT/frontend"
 }
 
 export DEMO_ALLOWED_MODELS_FILE="$(realpath "$MODEL_ALLOWLIST_FILE")"
-export DEMO_SAFETY_GUARD="1"
+export DEMO_SAFETY_GUARD="0"
 export DEMO_TASK_RETENTION_SECONDS="$((TASK_RETENTION_MINUTES * 60))"
 if [[ "${DEMO_CONTAINER:-}" == "1" ]]; then
   if ((VISIBLE_BROWSER)); then
