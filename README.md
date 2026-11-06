@@ -5,6 +5,10 @@ This repository is the online appendix for the paper
 the source code of the autonomous web testing demonstrator used in the study
 and the detailed, per-run results of all experiments.
 
+![Demonstrator UI](doc/screenshot.png)
+
+*The Demonstrator UI: the task list on the left and the agent chat view and the live browser feed on the right.*
+
 ## Abstract
 
 Automated web application testing traditionally relies on scripts tightly
@@ -32,6 +36,7 @@ workflows and handling invalid test inputs.
 ├── Demonstrator-Tool/   Source code of the autonomous web testing demonstrator
 ├── Scenarios/           The 15 Gherkin test scenarios used in the evaluation
 ├── Results/             Detailed per-run results of all experiments
+├── doc/                 Figures (e.g. screenshot of the Demonstrator UI)
 └── results-table.md     Aggregated results (per-scenario and overall)
 ```
 
