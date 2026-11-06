@@ -1,0 +1,311 @@
+{
+  "id": "1bb99f58-507e-47a1-8e36-208ee7e5ff71",
+  "configuration": "BrowserOnlyConfiguration",
+  "provider": "vllm",
+  "model": "Qwen/Qwen3.8-27B-FP8 - Reasoning OFF",
+  "task": "Given this is the current url: \"http://localhost:8080/owners/1/pets/new\"\nWhen I add \"Simba\" as a \"lion\" born on \"2023-05-12\" as a new pet for the existing owner \"George Franklin\"\nThen \"George Franklin\" has a lion named \"Simba\"",
+  "base_url": "http://localhost:8080/",
+  "num_task_executions": 1,
+  "max_iterations": 50,
+  "vision_enabled": true,
+  "record_video": true,
+  "video_available": true,
+  "archived": true,
+  "undeletable": false,
+  "status": "failed",
+  "current_execution": 1,
+  "error": "Task stopped before completion",
+  "statistics": {
+    "iterations": 1,
+    "llm_calls": 1,
+    "tokens_by_agent": {
+      "browser": {
+        "prompt_tokens": 32586,
+        "completion_tokens": 1722,
+        "total_tokens": 34308,
+        "calls": 1
+      }
+    },
+    "tokens_total": {
+      "prompt_tokens": 32586,
+      "completion_tokens": 1722,
+      "total_tokens": 34308
+    }
+  },
+  "result": {
+    "step": 1
+  },
+  "created_at": "2026-11-04T09:10:16.879238+00:00",
+  "updated_at": "2026-11-04T09:10:47.256396+00:00",
+  "events": [
+    {
+      "type": "step_start",
+      "data": {
+        "step": 1
+      },
+      "timestamp": 1793783418.8006647,
+      "execution_index": 1
+    },
+    {
+      "type": "browser_internal_step",
+      "data": {
+        "agent": "browser",
+        "step": 1,
+        "call_id": "1:browser",
+        "internal_step": 0,
+        "kind": "browser_use_log",
+        "text": "▶️   \u001b[34mnavigate\u001b[0m: \u001b[35murl\u001b[0m: http://localhost:8080/owners/1/pets/new, \u001b[35mnew_tab\u001b[0m: False"
+      },
+      "timestamp": 1793783419.2406068,
+      "execution_index": 1
+    },
+    {
+      "type": "browser_internal_step",
+      "data": {
+        "agent": "browser",
+        "step": 1,
+        "call_id": "1:browser",
+        "internal_step": 1,
+        "kind": "browser_use_log",
+        "text": "📍 Step 1:"
+      },
+      "timestamp": 1793783420.1358626,
+      "execution_index": 1
+    },
+    {
+      "type": "browser_internal_step",
+      "data": {
+        "agent": "browser",
+        "step": 1,
+        "call_id": "1:browser",
+        "internal_step": 1,
+        "kind": "browser_use_log",
+        "text": "🧠 Memory: On New Pet form for George Franklin at /owners/1/pets/new. Fields: name input [132], birthDate input [133], type select [134] (options shown: bird,cat,dog,hamster but count=6), Add Pet button [319]. Need to add Simba, lion, 2023-05-12."
+      },
+      "timestamp": 1793783426.6283758,
+      "execution_index": 1
+    },
+    {
+      "type": "browser_internal_step",
+      "data": {
+        "agent": "browser",
+        "step": 1,
+        "call_id": "1:browser",
+        "internal_step": 1,
+        "kind": "screenshot",
+        "screenshot": {
+          "filename": "step_1_1.png",
+          "task_id": "1bb99f58-507e-47a1-8e36-208ee7e5ff71",
+          "url": "/api/tasks/1bb99f58-507e-47a1-8e36-208ee7e5ff71/screenshots/step_1_1.png"
+        }
+      },
+      "timestamp": 1793783426.7098763,
+      "execution_index": 1
+    },
+    {
+      "type": "browser_internal_step",
+      "data": {
+        "agent": "browser",
+        "step": 1,
+        "call_id": "1:browser",
+        "internal_step": 1,
+        "kind": "browser_use_log",
+        "text": "▶️  [1/2] \u001b[34minput\u001b[0m: \u001b[35mindex\u001b[0m: 132, \u001b[35mtext\u001b[0m: Simba, \u001b[35mclear\u001b[0m: True"
+      },
+      "timestamp": 1793783426.7142582,
+      "execution_index": 1
+    },
+    {
+      "type": "browser_internal_step",
+      "data": {
+        "agent": "browser",
+        "step": 1,
+        "call_id": "1:browser",
+        "internal_step": 1,
+        "kind": "browser_use_log",
+        "text": "▶️  [2/2] \u001b[34minput\u001b[0m: \u001b[35mindex\u001b[0m: 133, \u001b[35mtext\u001b[0m: 2023-05-12, \u001b[35mclear\u001b[0m: True"
+      },
+      "timestamp": 1793783427.0927958,
+      "execution_index": 1
+    },
+    {
+      "type": "browser_internal_step",
+      "data": {
+        "agent": "browser",
+        "step": 1,
+        "call_id": "1:browser",
+        "internal_step": 1,
+        "kind": "browser_use_log",
+        "text": "📋 Plan updated with 5 steps"
+      },
+      "timestamp": 1793783427.117755,
+      "execution_index": 1
+    },
+    {
+      "type": "browser_internal_step",
+      "data": {
+        "agent": "browser",
+        "step": 1,
+        "call_id": "1:browser",
+        "internal_step": 2,
+        "kind": "browser_use_log",
+        "text": "📍 Step 2:"
+      },
+      "timestamp": 1793783427.7289603,
+      "execution_index": 1
+    },
+    {
+      "type": "browser_internal_step",
+      "data": {
+        "agent": "browser",
+        "step": 1,
+        "call_id": "1:browser",
+        "internal_step": 2,
+        "kind": "browser_use_log",
+        "text": "🧠 Memory: Name=Simba, BirthDate=2023-05-12 filled. Now need to select lion in Type dropdown [134], then click Add Pet [319]."
+      },
+      "timestamp": 1793783431.811011,
+      "execution_index": 1
+    },
+    {
+      "type": "browser_internal_step",
+      "data": {
+        "agent": "browser",
+        "step": 1,
+        "call_id": "1:browser",
+        "internal_step": 2,
+        "kind": "screenshot",
+        "screenshot": {
+          "filename": "step_1_2.png",
+          "task_id": "1bb99f58-507e-47a1-8e36-208ee7e5ff71",
+          "url": "/api/tasks/1bb99f58-507e-47a1-8e36-208ee7e5ff71/screenshots/step_1_2.png"
+        }
+      },
+      "timestamp": 1793783431.901019,
+      "execution_index": 1
+    },
+    {
+      "type": "browser_internal_step",
+      "data": {
+        "agent": "browser",
+        "step": 1,
+        "call_id": "1:browser",
+        "internal_step": 2,
+        "kind": "browser_use_log",
+        "text": "▶️   \u001b[34mselect_dropdown\u001b[0m: \u001b[35mindex\u001b[0m: 134, \u001b[35mtext\u001b[0m: lion"
+      },
+      "timestamp": 1793783431.9027452,
+      "execution_index": 1
+    },
+    {
+      "type": "browser_internal_step",
+      "data": {
+        "agent": "browser",
+        "step": 1,
+        "call_id": "1:browser",
+        "internal_step": 2,
+        "kind": "browser_use_log",
+        "text": "📋 Plan updated with 5 steps"
+      },
+      "timestamp": 1793783431.9112306,
+      "execution_index": 1
+    },
+    {
+      "type": "browser_internal_step",
+      "data": {
+        "agent": "browser",
+        "step": 1,
+        "call_id": "1:browser",
+        "internal_step": 3,
+        "kind": "browser_use_log",
+        "text": "📍 Step 3:"
+      },
+      "timestamp": 1793783432.5085187,
+      "execution_index": 1
+    },
+    {
+      "type": "browser_internal_step",
+      "data": {
+        "agent": "browser",
+        "step": 1,
+        "call_id": "1:browser",
+        "internal_step": 3,
+        "kind": "browser_use_log",
+        "text": "🧠 Memory: Name=Simba and BirthDate=2023-05-12 are filled correctly. However, the Type dropdown only offers: bird, cat, dog, hamster, lizard, snake. There is NO 'lion' option. The test case cannot be completed as specified because 'lion' is not a supported pet type in this application."
+      },
+      "timestamp": 1793783442.03686,
+      "execution_index": 1
+    },
+    {
+      "type": "browser_internal_step",
+      "data": {
+        "agent": "browser",
+        "step": 1,
+        "call_id": "1:browser",
+        "internal_step": 3,
+        "kind": "screenshot",
+        "screenshot": {
+          "filename": "step_1_3.png",
+          "task_id": "1bb99f58-507e-47a1-8e36-208ee7e5ff71",
+          "url": "/api/tasks/1bb99f58-507e-47a1-8e36-208ee7e5ff71/screenshots/step_1_3.png"
+        }
+      },
+      "timestamp": 1793783442.1342483,
+      "execution_index": 1
+    },
+    {
+      "type": "browser_internal_step",
+      "data": {
+        "agent": "browser",
+        "step": 1,
+        "call_id": "1:browser",
+        "internal_step": 3,
+        "kind": "browser_use_log",
+        "text": "▶️   \u001b[34mdone\u001b[0m: \u001b[35mtext\u001b[0m: I was unable to complete this test case successfully. Here's what happened:\n\n**Completed steps:**\n1. ✅ Navigated to http://localhost:8080/owners/1/pet..., \u001b[35msuccess\u001b[0m: False, \u001b[35mfiles_to_display\u001b[0m: []"
+      },
+      "timestamp": 1793783442.1365356,
+      "execution_index": 1
+    },
+    {
+      "type": "browser_internal_step",
+      "data": {
+        "agent": "browser",
+        "step": 1,
+        "call_id": "1:browser",
+        "internal_step": 3,
+        "kind": "browser_use_log",
+        "text": "📋 Plan updated with 5 steps"
+      },
+      "timestamp": 1793783442.1365433,
+      "execution_index": 1
+    },
+    {
+      "type": "agent_decision",
+      "data": {
+        "step": 1,
+        "agent": "browser",
+        "call_id": "1:browser",
+        "decision_type": "stop",
+        "payload": "I was unable to complete this test case successfully. Here's what happened:\n\n**Completed steps:**\n1. ✅ Navigated to http://localhost:8080/owners/1/pets/new (New Pet form for George Franklin)\n2. ✅ Filled Name field with \"Simba\"\n3. ✅ Filled Birth Date field with \"2023-05-12\"\n\n**Blocked step:**\n4. ❌ Could NOT select \"lion\" as the pet type. The Type dropdown only offers these options: **bird, cat, dog, hamster, lizard, snake**. There is no \"lion\" option available in this application.\n\n**Conclusion:**\nThe test case cannot be completed because the application does not support \"lion\" as a valid pet type. The Spring PetClinic application only supports specific animal types (bird, cat, dog, hamster, lizard, snake), and \"lion\" is not among them. Therefore:\n- The \"When\" step (adding Simba as a lion) cannot be fully executed\n- The \"Then\" step (verifying George Franklin has a lion named Simba) cannot be verified\n\nThis appears to be either an invalid test case for this application or a mismatch between the test expectations and the actual application capabilities."
+      },
+      "timestamp": 1793783446.97323,
+      "execution_index": 1
+    },
+    {
+      "type": "step_complete",
+      "data": {
+        "step": 1
+      },
+      "timestamp": 1793783446.973249,
+      "execution_index": 1
+    },
+    {
+      "type": "stopped",
+      "data": {
+        "step": 1
+      },
+      "timestamp": 1793783446.973255,
+      "execution_index": 1
+    }
+  ]
+}

@@ -1,0 +1,255 @@
+{
+  "id": "ded38763-e07f-497d-92bb-f7cf0cd8b4f8",
+  "configuration": "BrowserOnlyConfiguration",
+  "provider": "vllm",
+  "model": "Qwen/Qwen3.8-27B-FP8 - Reasoning OFF",
+  "task": "Given this is the current URL: \"http://localhost:8080/owners/find\"\nWhen I search for an owner with the last name \"Franklin\"\nThen \"George Franklin\" can be seen as an owner",
+  "base_url": null,
+  "num_task_executions": 1,
+  "max_iterations": 50,
+  "vision_enabled": true,
+  "record_video": true,
+  "video_available": true,
+  "archived": true,
+  "undeletable": false,
+  "status": "completed",
+  "current_execution": 1,
+  "error": null,
+  "statistics": {
+    "iterations": 1,
+    "llm_calls": 1,
+    "tokens_by_agent": {
+      "browser": {
+        "prompt_tokens": 21870,
+        "completion_tokens": 1092,
+        "total_tokens": 22962,
+        "calls": 1
+      }
+    },
+    "tokens_total": {
+      "prompt_tokens": 21870,
+      "completion_tokens": 1092,
+      "total_tokens": 22962
+    }
+  },
+  "result": {
+    "step": 1
+  },
+  "created_at": "2026-10-29T10:58:46.464920+00:00",
+  "updated_at": "2026-10-29T10:59:48.596546+00:00",
+  "events": [
+    {
+      "type": "step_start",
+      "data": {
+        "step": 1
+      },
+      "timestamp": 1793271535.1978018,
+      "execution_index": 1
+    },
+    {
+      "type": "browser_internal_step",
+      "data": {
+        "agent": "browser",
+        "step": 1,
+        "call_id": "1:browser",
+        "internal_step": 0,
+        "kind": "browser_use_log",
+        "text": "▶️   \u001b[34mnavigate\u001b[0m: \u001b[35murl\u001b[0m: http://localhost:8080/owners/find, \u001b[35mnew_tab\u001b[0m: False"
+      },
+      "timestamp": 1793271551.6622598,
+      "execution_index": 1
+    },
+    {
+      "type": "browser_internal_step",
+      "data": {
+        "agent": "browser",
+        "step": 1,
+        "call_id": "1:browser",
+        "internal_step": 1,
+        "kind": "browser_use_log",
+        "text": "📍 Step 1:"
+      },
+      "timestamp": 1793271552.9308498,
+      "execution_index": 1
+    },
+    {
+      "type": "browser_internal_step",
+      "data": {
+        "agent": "browser",
+        "step": 1,
+        "call_id": "1:browser",
+        "internal_step": 1,
+        "kind": "browser_use_log",
+        "text": "🧠 Memory: On the Find Owners page. Need to search for last name 'Franklin' and verify 'George Franklin' appears in results."
+      },
+      "timestamp": 1793271559.8078547,
+      "execution_index": 1
+    },
+    {
+      "type": "browser_internal_step",
+      "data": {
+        "agent": "browser",
+        "step": 1,
+        "call_id": "1:browser",
+        "internal_step": 1,
+        "kind": "screenshot",
+        "screenshot": {
+          "filename": "step_1_1.png",
+          "task_id": "ded38763-e07f-497d-92bb-f7cf0cd8b4f8",
+          "url": "/api/tasks/ded38763-e07f-497d-92bb-f7cf0cd8b4f8/screenshots/step_1_1.png"
+        }
+      },
+      "timestamp": 1793271559.9099932,
+      "execution_index": 1
+    },
+    {
+      "type": "browser_internal_step",
+      "data": {
+        "agent": "browser",
+        "step": 1,
+        "call_id": "1:browser",
+        "internal_step": 1,
+        "kind": "browser_use_log",
+        "text": "▶️  [1/2] \u001b[34minput\u001b[0m: \u001b[35mindex\u001b[0m: 6, \u001b[35mtext\u001b[0m: Franklin, \u001b[35mclear\u001b[0m: True"
+      },
+      "timestamp": 1793271559.9141474,
+      "execution_index": 1
+    },
+    {
+      "type": "browser_internal_step",
+      "data": {
+        "agent": "browser",
+        "step": 1,
+        "call_id": "1:browser",
+        "internal_step": 1,
+        "kind": "browser_use_log",
+        "text": "▶️  [2/2] \u001b[34mclick\u001b[0m: \u001b[35mindex\u001b[0m: 127"
+      },
+      "timestamp": 1793271560.4169781,
+      "execution_index": 1
+    },
+    {
+      "type": "browser_internal_step",
+      "data": {
+        "agent": "browser",
+        "step": 1,
+        "call_id": "1:browser",
+        "internal_step": 1,
+        "kind": "browser_use_log",
+        "text": "📋 Plan updated with 3 steps"
+      },
+      "timestamp": 1793271561.3617768,
+      "execution_index": 1
+    },
+    {
+      "type": "browser_internal_step",
+      "data": {
+        "agent": "browser",
+        "step": 1,
+        "call_id": "1:browser",
+        "internal_step": 2,
+        "kind": "browser_use_log",
+        "text": "📍 Step 2:"
+      },
+      "timestamp": 1793271562.1262193,
+      "execution_index": 1
+    },
+    {
+      "type": "browser_internal_step",
+      "data": {
+        "agent": "browser",
+        "step": 1,
+        "call_id": "1:browser",
+        "internal_step": 2,
+        "kind": "browser_use_log",
+        "text": "🧠 Memory: Test case completed successfully. Searched for last name 'Franklin' on /owners/find, found George Franklin, and his owner detail page at /owners/1 displays his name correctly."
+      },
+      "timestamp": 1793271573.756769,
+      "execution_index": 1
+    },
+    {
+      "type": "browser_internal_step",
+      "data": {
+        "agent": "browser",
+        "step": 1,
+        "call_id": "1:browser",
+        "internal_step": 2,
+        "kind": "screenshot",
+        "screenshot": {
+          "filename": "step_1_2.png",
+          "task_id": "ded38763-e07f-497d-92bb-f7cf0cd8b4f8",
+          "url": "/api/tasks/ded38763-e07f-497d-92bb-f7cf0cd8b4f8/screenshots/step_1_2.png"
+        }
+      },
+      "timestamp": 1793271573.9802012,
+      "execution_index": 1
+    },
+    {
+      "type": "browser_internal_step",
+      "data": {
+        "agent": "browser",
+        "step": 1,
+        "call_id": "1:browser",
+        "internal_step": 2,
+        "kind": "browser_use_log",
+        "text": "▶️   \u001b[34mdone\u001b[0m: \u001b[35mtext\u001b[0m: Test case executed successfully:\n\n**Given** this is the current URL: \"http://localhost:8080/owners/find\" ✅\n- Navigated to the Find Owners page.\n\n**Whe..., \u001b[35msuccess\u001b[0m: True, \u001b[35mfiles_to_display\u001b[0m: []"
+      },
+      "timestamp": 1793271573.9849775,
+      "execution_index": 1
+    },
+    {
+      "type": "browser_internal_step",
+      "data": {
+        "agent": "browser",
+        "step": 1,
+        "call_id": "1:browser",
+        "internal_step": 2,
+        "kind": "browser_use_log",
+        "text": "📋 Plan updated with 3 steps"
+      },
+      "timestamp": 1793271573.9849937,
+      "execution_index": 1
+    },
+    {
+      "type": "browser_internal_step",
+      "data": {
+        "agent": "browser",
+        "step": 1,
+        "call_id": "1:browser",
+        "internal_step": 2,
+        "kind": "browser_use_log",
+        "text": "✅ Task completed successfully"
+      },
+      "timestamp": 1793271574.6376975,
+      "execution_index": 1
+    },
+    {
+      "type": "agent_decision",
+      "data": {
+        "step": 1,
+        "agent": "browser",
+        "call_id": "1:browser",
+        "decision_type": "stop",
+        "payload": "Test case executed successfully:\n\n**Given** this is the current URL: \"http://localhost:8080/owners/find\" ✅\n- Navigated to the Find Owners page.\n\n**When** I search for an owner with the last name \"Franklin\" ✅\n- Typed 'Franklin' in the last name input field and clicked 'Find Owner'.\n\n**Then** \"George Franklin\" can be seen as an owner ✅\n- The search returned George Franklin, and his owner detail page (http://localhost:8080/owners/1) clearly displays his name \"George Franklin\" in the Owner Information section along with his address (110 W. Liberty St.), city (Madison), and telephone (6085551023).\n\nAll three steps of the Gherkin test case passed."
+      },
+      "timestamp": 1793271580.570424,
+      "execution_index": 1
+    },
+    {
+      "type": "step_complete",
+      "data": {
+        "step": 1
+      },
+      "timestamp": 1793271580.5704517,
+      "execution_index": 1
+    },
+    {
+      "type": "completed",
+      "data": {
+        "step": 1
+      },
+      "timestamp": 1793271580.5704577,
+      "execution_index": 1
+    }
+  ]
+}

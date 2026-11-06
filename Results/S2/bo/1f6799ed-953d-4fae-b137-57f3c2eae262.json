@@ -1,0 +1,527 @@
+{
+  "id": "1f6799ed-953d-4fae-b137-57f3c2eae262",
+  "configuration": "BrowserOnlyConfiguration",
+  "provider": "vllm",
+  "model": "Qwen/Qwen3.8-27B-FP8 - Reasoning OFF",
+  "task": "Given this is the current URL: \"http://localhost:8080/owners/new\"\nWhen I add a person with first name \"John\" and last name \"Smith\" as a new pet owner\nThen \"John Smith\" is an owner",
+  "base_url": null,
+  "num_task_executions": 1,
+  "max_iterations": 50,
+  "vision_enabled": true,
+  "record_video": true,
+  "video_available": true,
+  "archived": true,
+  "undeletable": false,
+  "status": "completed",
+  "current_execution": 1,
+  "error": null,
+  "statistics": {
+    "iterations": 1,
+    "llm_calls": 1,
+    "tokens_by_agent": {
+      "browser": {
+        "prompt_tokens": 52402,
+        "completion_tokens": 1964,
+        "total_tokens": 54366,
+        "calls": 1
+      }
+    },
+    "tokens_total": {
+      "prompt_tokens": 52402,
+      "completion_tokens": 1964,
+      "total_tokens": 54366
+    }
+  },
+  "result": {
+    "step": 1
+  },
+  "created_at": "2026-10-29T12:47:53.353033+00:00",
+  "updated_at": "2026-10-29T12:48:53.544432+00:00",
+  "events": [
+    {
+      "type": "step_start",
+      "data": {
+        "step": 1
+      },
+      "timestamp": 1793278075.5457742,
+      "execution_index": 1
+    },
+    {
+      "type": "browser_internal_step",
+      "data": {
+        "agent": "browser",
+        "step": 1,
+        "call_id": "1:browser",
+        "internal_step": 0,
+        "kind": "browser_use_log",
+        "text": "▶️   \u001b[34mnavigate\u001b[0m: \u001b[35murl\u001b[0m: http://localhost:8080/owners/new, \u001b[35mnew_tab\u001b[0m: False"
+      },
+      "timestamp": 1793278076.1133957,
+      "execution_index": 1
+    },
+    {
+      "type": "browser_internal_step",
+      "data": {
+        "agent": "browser",
+        "step": 1,
+        "call_id": "1:browser",
+        "internal_step": 1,
+        "kind": "browser_use_log",
+        "text": "📍 Step 1:"
+      },
+      "timestamp": 1793278076.9895346,
+      "execution_index": 1
+    },
+    {
+      "type": "browser_internal_step",
+      "data": {
+        "agent": "browser",
+        "step": 1,
+        "call_id": "1:browser",
+        "internal_step": 1,
+        "kind": "browser_use_log",
+        "text": "🧠 Memory: On new owner form. Need to fill firstName=John, lastName=Smith, then submit and verify John Smith appears as an owner."
+      },
+      "timestamp": 1793278087.032748,
+      "execution_index": 1
+    },
+    {
+      "type": "browser_internal_step",
+      "data": {
+        "agent": "browser",
+        "step": 1,
+        "call_id": "1:browser",
+        "internal_step": 1,
+        "kind": "screenshot",
+        "screenshot": {
+          "filename": "step_1_1.png",
+          "task_id": "1f6799ed-953d-4fae-b137-57f3c2eae262",
+          "url": "/api/tasks/1f6799ed-953d-4fae-b137-57f3c2eae262/screenshots/step_1_1.png"
+        }
+      },
+      "timestamp": 1793278087.1242743,
+      "execution_index": 1
+    },
+    {
+      "type": "browser_internal_step",
+      "data": {
+        "agent": "browser",
+        "step": 1,
+        "call_id": "1:browser",
+        "internal_step": 1,
+        "kind": "browser_use_log",
+        "text": "▶️  [1/3] \u001b[34minput\u001b[0m: \u001b[35mindex\u001b[0m: 6, \u001b[35mtext\u001b[0m: John, \u001b[35mclear\u001b[0m: True"
+      },
+      "timestamp": 1793278087.126992,
+      "execution_index": 1
+    },
+    {
+      "type": "browser_internal_step",
+      "data": {
+        "agent": "browser",
+        "step": 1,
+        "call_id": "1:browser",
+        "internal_step": 1,
+        "kind": "browser_use_log",
+        "text": "▶️  [2/3] \u001b[34minput\u001b[0m: \u001b[35mindex\u001b[0m: 7, \u001b[35mtext\u001b[0m: Smith, \u001b[35mclear\u001b[0m: True"
+      },
+      "timestamp": 1793278087.446587,
+      "execution_index": 1
+    },
+    {
+      "type": "browser_internal_step",
+      "data": {
+        "agent": "browser",
+        "step": 1,
+        "call_id": "1:browser",
+        "internal_step": 1,
+        "kind": "browser_use_log",
+        "text": "▶️  [3/3] \u001b[34mclick\u001b[0m: \u001b[35mindex\u001b[0m: 194"
+      },
+      "timestamp": 1793278087.7796826,
+      "execution_index": 1
+    },
+    {
+      "type": "browser_internal_step",
+      "data": {
+        "agent": "browser",
+        "step": 1,
+        "call_id": "1:browser",
+        "internal_step": 1,
+        "kind": "browser_use_log",
+        "text": "📋 Plan updated with 4 steps"
+      },
+      "timestamp": 1793278088.5952885,
+      "execution_index": 1
+    },
+    {
+      "type": "browser_internal_step",
+      "data": {
+        "agent": "browser",
+        "step": 1,
+        "call_id": "1:browser",
+        "internal_step": 2,
+        "kind": "browser_use_log",
+        "text": "📍 Step 2:"
+      },
+      "timestamp": 1793278089.4726794,
+      "execution_index": 1
+    },
+    {
+      "type": "browser_internal_step",
+      "data": {
+        "agent": "browser",
+        "step": 1,
+        "call_id": "1:browser",
+        "internal_step": 2,
+        "kind": "browser_use_log",
+        "text": "🧠 Memory: Form requires Address, City, and Telephone in addition to First/Last Name. Need to fill these required fields with valid values before submitting."
+      },
+      "timestamp": 1793278097.1720507,
+      "execution_index": 1
+    },
+    {
+      "type": "browser_internal_step",
+      "data": {
+        "agent": "browser",
+        "step": 1,
+        "call_id": "1:browser",
+        "internal_step": 2,
+        "kind": "screenshot",
+        "screenshot": {
+          "filename": "step_1_2.png",
+          "task_id": "1f6799ed-953d-4fae-b137-57f3c2eae262",
+          "url": "/api/tasks/1f6799ed-953d-4fae-b137-57f3c2eae262/screenshots/step_1_2.png"
+        }
+      },
+      "timestamp": 1793278097.2649012,
+      "execution_index": 1
+    },
+    {
+      "type": "browser_internal_step",
+      "data": {
+        "agent": "browser",
+        "step": 1,
+        "call_id": "1:browser",
+        "internal_step": 2,
+        "kind": "browser_use_log",
+        "text": "▶️  [1/4] \u001b[34minput\u001b[0m: \u001b[35mindex\u001b[0m: 249, \u001b[35mtext\u001b[0m: 123 Main St, \u001b[35mclear\u001b[0m: True"
+      },
+      "timestamp": 1793278097.2680526,
+      "execution_index": 1
+    },
+    {
+      "type": "browser_internal_step",
+      "data": {
+        "agent": "browser",
+        "step": 1,
+        "call_id": "1:browser",
+        "internal_step": 2,
+        "kind": "browser_use_log",
+        "text": "▶️  [2/4] \u001b[34minput\u001b[0m: \u001b[35mindex\u001b[0m: 250, \u001b[35mtext\u001b[0m: Springfield, \u001b[35mclear\u001b[0m: True"
+      },
+      "timestamp": 1793278097.8279593,
+      "execution_index": 1
+    },
+    {
+      "type": "browser_internal_step",
+      "data": {
+        "agent": "browser",
+        "step": 1,
+        "call_id": "1:browser",
+        "internal_step": 2,
+        "kind": "browser_use_log",
+        "text": "▶️  [3/4] \u001b[34minput\u001b[0m: \u001b[35mindex\u001b[0m: 251, \u001b[35mtext\u001b[0m: 1234567890, \u001b[35mclear\u001b[0m: True"
+      },
+      "timestamp": 1793278098.408802,
+      "execution_index": 1
+    },
+    {
+      "type": "browser_internal_step",
+      "data": {
+        "agent": "browser",
+        "step": 1,
+        "call_id": "1:browser",
+        "internal_step": 2,
+        "kind": "browser_use_log",
+        "text": "▶️  [4/4] \u001b[34mclick\u001b[0m: \u001b[35mindex\u001b[0m: 449"
+      },
+      "timestamp": 1793278098.9169087,
+      "execution_index": 1
+    },
+    {
+      "type": "browser_internal_step",
+      "data": {
+        "agent": "browser",
+        "step": 1,
+        "call_id": "1:browser",
+        "internal_step": 2,
+        "kind": "browser_use_log",
+        "text": "📋 Plan updated with 4 steps"
+      },
+      "timestamp": 1793278100.210081,
+      "execution_index": 1
+    },
+    {
+      "type": "browser_internal_step",
+      "data": {
+        "agent": "browser",
+        "step": 1,
+        "call_id": "1:browser",
+        "internal_step": 3,
+        "kind": "browser_use_log",
+        "text": "📍 Step 3:"
+      },
+      "timestamp": 1793278100.814482,
+      "execution_index": 1
+    },
+    {
+      "type": "browser_internal_step",
+      "data": {
+        "agent": "browser",
+        "step": 1,
+        "call_id": "1:browser",
+        "internal_step": 3,
+        "kind": "browser_use_log",
+        "text": "🧠 Memory: Owner John Smith was successfully created (ID 11). The owner detail page confirms Name: John Smith, Address: 123 Main St, City: Springfield, Telephone: 1234567890. Now need to verify via Find Owners that John Smith appears in the list."
+      },
+      "timestamp": 1793278107.101022,
+      "execution_index": 1
+    },
+    {
+      "type": "browser_internal_step",
+      "data": {
+        "agent": "browser",
+        "step": 1,
+        "call_id": "1:browser",
+        "internal_step": 3,
+        "kind": "screenshot",
+        "screenshot": {
+          "filename": "step_1_3.png",
+          "task_id": "1f6799ed-953d-4fae-b137-57f3c2eae262",
+          "url": "/api/tasks/1f6799ed-953d-4fae-b137-57f3c2eae262/screenshots/step_1_3.png"
+        }
+      },
+      "timestamp": 1793278107.2657363,
+      "execution_index": 1
+    },
+    {
+      "type": "browser_internal_step",
+      "data": {
+        "agent": "browser",
+        "step": 1,
+        "call_id": "1:browser",
+        "internal_step": 3,
+        "kind": "browser_use_log",
+        "text": "▶️   \u001b[34mclick\u001b[0m: \u001b[35mindex\u001b[0m: 565"
+      },
+      "timestamp": 1793278107.2686675,
+      "execution_index": 1
+    },
+    {
+      "type": "browser_internal_step",
+      "data": {
+        "agent": "browser",
+        "step": 1,
+        "call_id": "1:browser",
+        "internal_step": 3,
+        "kind": "browser_use_log",
+        "text": "📋 Plan updated with 4 steps"
+      },
+      "timestamp": 1793278108.3430045,
+      "execution_index": 1
+    },
+    {
+      "type": "browser_internal_step",
+      "data": {
+        "agent": "browser",
+        "step": 1,
+        "call_id": "1:browser",
+        "internal_step": 4,
+        "kind": "browser_use_log",
+        "text": "📍 Step 4:"
+      },
+      "timestamp": 1793278109.0739121,
+      "execution_index": 1
+    },
+    {
+      "type": "browser_internal_step",
+      "data": {
+        "agent": "browser",
+        "step": 1,
+        "call_id": "1:browser",
+        "internal_step": 4,
+        "kind": "browser_use_log",
+        "text": "🧠 Memory: Owner John Smith was created with ID 11. Now on Find Owners page, need to search for 'Smith' to verify."
+      },
+      "timestamp": 1793278114.219483,
+      "execution_index": 1
+    },
+    {
+      "type": "browser_internal_step",
+      "data": {
+        "agent": "browser",
+        "step": 1,
+        "call_id": "1:browser",
+        "internal_step": 4,
+        "kind": "screenshot",
+        "screenshot": {
+          "filename": "step_1_4.png",
+          "task_id": "1f6799ed-953d-4fae-b137-57f3c2eae262",
+          "url": "/api/tasks/1f6799ed-953d-4fae-b137-57f3c2eae262/screenshots/step_1_4.png"
+        }
+      },
+      "timestamp": 1793278114.309036,
+      "execution_index": 1
+    },
+    {
+      "type": "browser_internal_step",
+      "data": {
+        "agent": "browser",
+        "step": 1,
+        "call_id": "1:browser",
+        "internal_step": 4,
+        "kind": "browser_use_log",
+        "text": "▶️  [1/2] \u001b[34minput\u001b[0m: \u001b[35mindex\u001b[0m: 694, \u001b[35mtext\u001b[0m: Smith, \u001b[35mclear\u001b[0m: True"
+      },
+      "timestamp": 1793278114.311863,
+      "execution_index": 1
+    },
+    {
+      "type": "browser_internal_step",
+      "data": {
+        "agent": "browser",
+        "step": 1,
+        "call_id": "1:browser",
+        "internal_step": 4,
+        "kind": "browser_use_log",
+        "text": "▶️  [2/2] \u001b[34mclick\u001b[0m: \u001b[35mindex\u001b[0m: 815"
+      },
+      "timestamp": 1793278114.6407702,
+      "execution_index": 1
+    },
+    {
+      "type": "browser_internal_step",
+      "data": {
+        "agent": "browser",
+        "step": 1,
+        "call_id": "1:browser",
+        "internal_step": 4,
+        "kind": "browser_use_log",
+        "text": "📋 Plan updated with 4 steps"
+      },
+      "timestamp": 1793278115.4345183,
+      "execution_index": 1
+    },
+    {
+      "type": "browser_internal_step",
+      "data": {
+        "agent": "browser",
+        "step": 1,
+        "call_id": "1:browser",
+        "internal_step": 5,
+        "kind": "browser_use_log",
+        "text": "📍 Step 5:"
+      },
+      "timestamp": 1793278116.1798756,
+      "execution_index": 1
+    },
+    {
+      "type": "browser_internal_step",
+      "data": {
+        "agent": "browser",
+        "step": 1,
+        "call_id": "1:browser",
+        "internal_step": 5,
+        "kind": "browser_use_log",
+        "text": "🧠 Memory: Gherkin test completed successfully. Owner John Smith (ID 11) was created with first name John, last name Smith, address 123 Main St, city Springfield, telephone 1234567890. The owner detail page confirms 'John Smith' is an owner."
+      },
+      "timestamp": 1793278125.6290352,
+      "execution_index": 1
+    },
+    {
+      "type": "browser_internal_step",
+      "data": {
+        "agent": "browser",
+        "step": 1,
+        "call_id": "1:browser",
+        "internal_step": 5,
+        "kind": "screenshot",
+        "screenshot": {
+          "filename": "step_1_5.png",
+          "task_id": "1f6799ed-953d-4fae-b137-57f3c2eae262",
+          "url": "/api/tasks/1f6799ed-953d-4fae-b137-57f3c2eae262/screenshots/step_1_5.png"
+        }
+      },
+      "timestamp": 1793278125.7319808,
+      "execution_index": 1
+    },
+    {
+      "type": "browser_internal_step",
+      "data": {
+        "agent": "browser",
+        "step": 1,
+        "call_id": "1:browser",
+        "internal_step": 5,
+        "kind": "browser_use_log",
+        "text": "▶️   \u001b[34mdone\u001b[0m: \u001b[35mtext\u001b[0m: Gherkin test case executed successfully:\n\nGiven: Started at http://localhost:8080/owners/new ✓\nWhen: Added a person with first name \"John\" and last na..., \u001b[35msuccess\u001b[0m: True, \u001b[35mfiles_to_display\u001b[0m: []"
+      },
+      "timestamp": 1793278125.7356246,
+      "execution_index": 1
+    },
+    {
+      "type": "browser_internal_step",
+      "data": {
+        "agent": "browser",
+        "step": 1,
+        "call_id": "1:browser",
+        "internal_step": 5,
+        "kind": "browser_use_log",
+        "text": "📋 Plan updated with 4 steps"
+      },
+      "timestamp": 1793278125.7356396,
+      "execution_index": 1
+    },
+    {
+      "type": "browser_internal_step",
+      "data": {
+        "agent": "browser",
+        "step": 1,
+        "call_id": "1:browser",
+        "internal_step": 5,
+        "kind": "browser_use_log",
+        "text": "✅ Task completed successfully"
+      },
+      "timestamp": 1793278126.327131,
+      "execution_index": 1
+    },
+    {
+      "type": "agent_decision",
+      "data": {
+        "step": 1,
+        "agent": "browser",
+        "call_id": "1:browser",
+        "decision_type": "stop",
+        "payload": "Gherkin test case executed successfully:\n\nGiven: Started at http://localhost:8080/owners/new ✓\nWhen: Added a person with first name \"John\" and last name \"Smith\" as a new pet owner ✓\nThen: \"John Smith\" is an owner ✓\n\nThe new owner was created with ID 11. The owner detail page at /owners/11 confirms:\n- Name: John Smith\n- Address: 123 Main St\n- City: Springfield\n- Telephone: 1234567890\n\nAll three Gherkin steps passed."
+      },
+      "timestamp": 1793278133.0282452,
+      "execution_index": 1
+    },
+    {
+      "type": "step_complete",
+      "data": {
+        "step": 1
+      },
+      "timestamp": 1793278133.0282693,
+      "execution_index": 1
+    },
+    {
+      "type": "completed",
+      "data": {
+        "step": 1
+      },
+      "timestamp": 1793278133.0282736,
+      "execution_index": 1
+    }
+  ]
+}

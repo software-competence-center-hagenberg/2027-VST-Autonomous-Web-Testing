@@ -1,0 +1,311 @@
+{
+  "id": "1b5e5fe3-f090-4738-af89-e40f0d728ad5",
+  "configuration": "BrowserOnlyConfiguration",
+  "provider": "vllm",
+  "model": "Qwen/Qwen3.8-27B-FP8 - Reasoning OFF",
+  "task": "Given this is the current url: \"http://localhost:8080/owners/1/pets/new\"\nWhen I add \"Simba\" as a \"lion\" born on \"2023-05-12\" as a new pet for the existing owner \"George Franklin\"\nThen \"George Franklin\" has a lion named \"Simba\"",
+  "base_url": "http://localhost:8080/",
+  "num_task_executions": 1,
+  "max_iterations": 50,
+  "vision_enabled": true,
+  "record_video": true,
+  "video_available": true,
+  "archived": true,
+  "undeletable": false,
+  "status": "failed",
+  "current_execution": 1,
+  "error": "Task stopped before completion",
+  "statistics": {
+    "iterations": 1,
+    "llm_calls": 1,
+    "tokens_by_agent": {
+      "browser": {
+        "prompt_tokens": 32492,
+        "completion_tokens": 1538,
+        "total_tokens": 34030,
+        "calls": 1
+      }
+    },
+    "tokens_total": {
+      "prompt_tokens": 32492,
+      "completion_tokens": 1538,
+      "total_tokens": 34030
+    }
+  },
+  "result": {
+    "step": 1
+  },
+  "created_at": "2026-11-04T09:12:00.325369+00:00",
+  "updated_at": "2026-11-04T09:12:29.539867+00:00",
+  "events": [
+    {
+      "type": "step_start",
+      "data": {
+        "step": 1
+      },
+      "timestamp": 1793783522.1530907,
+      "execution_index": 1
+    },
+    {
+      "type": "browser_internal_step",
+      "data": {
+        "agent": "browser",
+        "step": 1,
+        "call_id": "1:browser",
+        "internal_step": 0,
+        "kind": "browser_use_log",
+        "text": "▶️   \u001b[34mnavigate\u001b[0m: \u001b[35murl\u001b[0m: http://localhost:8080/owners/1/pets/new, \u001b[35mnew_tab\u001b[0m: False"
+      },
+      "timestamp": 1793783522.7056093,
+      "execution_index": 1
+    },
+    {
+      "type": "browser_internal_step",
+      "data": {
+        "agent": "browser",
+        "step": 1,
+        "call_id": "1:browser",
+        "internal_step": 1,
+        "kind": "browser_use_log",
+        "text": "📍 Step 1:"
+      },
+      "timestamp": 1793783523.470106,
+      "execution_index": 1
+    },
+    {
+      "type": "browser_internal_step",
+      "data": {
+        "agent": "browser",
+        "step": 1,
+        "call_id": "1:browser",
+        "internal_step": 1,
+        "kind": "browser_use_log",
+        "text": "🧠 Memory: On New Pet form for George Franklin (owner 1). Fields: Name [132], Birth Date [133], Type dropdown [134] with options bird|cat|dog|hamster (no lion visible yet). Need to add Simba, lion, 2023-05-12."
+      },
+      "timestamp": 1793783528.9728231,
+      "execution_index": 1
+    },
+    {
+      "type": "browser_internal_step",
+      "data": {
+        "agent": "browser",
+        "step": 1,
+        "call_id": "1:browser",
+        "internal_step": 1,
+        "kind": "screenshot",
+        "screenshot": {
+          "filename": "step_1_1.png",
+          "task_id": "1b5e5fe3-f090-4738-af89-e40f0d728ad5",
+          "url": "/api/tasks/1b5e5fe3-f090-4738-af89-e40f0d728ad5/screenshots/step_1_1.png"
+        }
+      },
+      "timestamp": 1793783529.063594,
+      "execution_index": 1
+    },
+    {
+      "type": "browser_internal_step",
+      "data": {
+        "agent": "browser",
+        "step": 1,
+        "call_id": "1:browser",
+        "internal_step": 1,
+        "kind": "browser_use_log",
+        "text": "▶️  [1/2] \u001b[34minput\u001b[0m: \u001b[35mindex\u001b[0m: 132, \u001b[35mtext\u001b[0m: Simba, \u001b[35mclear\u001b[0m: True"
+      },
+      "timestamp": 1793783529.0656407,
+      "execution_index": 1
+    },
+    {
+      "type": "browser_internal_step",
+      "data": {
+        "agent": "browser",
+        "step": 1,
+        "call_id": "1:browser",
+        "internal_step": 1,
+        "kind": "browser_use_log",
+        "text": "▶️  [2/2] \u001b[34minput\u001b[0m: \u001b[35mindex\u001b[0m: 133, \u001b[35mtext\u001b[0m: 2023-05-12, \u001b[35mclear\u001b[0m: True"
+      },
+      "timestamp": 1793783529.449922,
+      "execution_index": 1
+    },
+    {
+      "type": "browser_internal_step",
+      "data": {
+        "agent": "browser",
+        "step": 1,
+        "call_id": "1:browser",
+        "internal_step": 1,
+        "kind": "browser_use_log",
+        "text": "📋 Plan updated with 5 steps"
+      },
+      "timestamp": 1793783529.4853652,
+      "execution_index": 1
+    },
+    {
+      "type": "browser_internal_step",
+      "data": {
+        "agent": "browser",
+        "step": 1,
+        "call_id": "1:browser",
+        "internal_step": 2,
+        "kind": "browser_use_log",
+        "text": "📍 Step 2:"
+      },
+      "timestamp": 1793783530.095526,
+      "execution_index": 1
+    },
+    {
+      "type": "browser_internal_step",
+      "data": {
+        "agent": "browser",
+        "step": 1,
+        "call_id": "1:browser",
+        "internal_step": 2,
+        "kind": "browser_use_log",
+        "text": "🧠 Memory: Name=Simba, BirthDate=2023-05-12 filled. Type dropdown [134] shows options bird|cat|dog|hamster - no lion option visible. Need to verify by expanding dropdown."
+      },
+      "timestamp": 1793783535.0286636,
+      "execution_index": 1
+    },
+    {
+      "type": "browser_internal_step",
+      "data": {
+        "agent": "browser",
+        "step": 1,
+        "call_id": "1:browser",
+        "internal_step": 2,
+        "kind": "screenshot",
+        "screenshot": {
+          "filename": "step_1_2.png",
+          "task_id": "1b5e5fe3-f090-4738-af89-e40f0d728ad5",
+          "url": "/api/tasks/1b5e5fe3-f090-4738-af89-e40f0d728ad5/screenshots/step_1_2.png"
+        }
+      },
+      "timestamp": 1793783535.1278517,
+      "execution_index": 1
+    },
+    {
+      "type": "browser_internal_step",
+      "data": {
+        "agent": "browser",
+        "step": 1,
+        "call_id": "1:browser",
+        "internal_step": 2,
+        "kind": "browser_use_log",
+        "text": "▶️   \u001b[34mclick\u001b[0m: \u001b[35mindex\u001b[0m: 134"
+      },
+      "timestamp": 1793783535.1304362,
+      "execution_index": 1
+    },
+    {
+      "type": "browser_internal_step",
+      "data": {
+        "agent": "browser",
+        "step": 1,
+        "call_id": "1:browser",
+        "internal_step": 2,
+        "kind": "browser_use_log",
+        "text": "📋 Plan updated with 5 steps"
+      },
+      "timestamp": 1793783535.1436827,
+      "execution_index": 1
+    },
+    {
+      "type": "browser_internal_step",
+      "data": {
+        "agent": "browser",
+        "step": 1,
+        "call_id": "1:browser",
+        "internal_step": 3,
+        "kind": "browser_use_log",
+        "text": "📍 Step 3:"
+      },
+      "timestamp": 1793783535.7888591,
+      "execution_index": 1
+    },
+    {
+      "type": "browser_internal_step",
+      "data": {
+        "agent": "browser",
+        "step": 1,
+        "call_id": "1:browser",
+        "internal_step": 3,
+        "kind": "browser_use_log",
+        "text": "🧠 Memory: The pet type dropdown does not include 'lion'. Available types are: bird, cat, dog, hamster, lizard, snake. The test case cannot be fully executed because 'lion' is not a supported pet type in this application."
+      },
+      "timestamp": 1793783544.2890813,
+      "execution_index": 1
+    },
+    {
+      "type": "browser_internal_step",
+      "data": {
+        "agent": "browser",
+        "step": 1,
+        "call_id": "1:browser",
+        "internal_step": 3,
+        "kind": "screenshot",
+        "screenshot": {
+          "filename": "step_1_3.png",
+          "task_id": "1b5e5fe3-f090-4738-af89-e40f0d728ad5",
+          "url": "/api/tasks/1b5e5fe3-f090-4738-af89-e40f0d728ad5/screenshots/step_1_3.png"
+        }
+      },
+      "timestamp": 1793783544.4768832,
+      "execution_index": 1
+    },
+    {
+      "type": "browser_internal_step",
+      "data": {
+        "agent": "browser",
+        "step": 1,
+        "call_id": "1:browser",
+        "internal_step": 3,
+        "kind": "browser_use_log",
+        "text": "▶️   \u001b[34mdone\u001b[0m: \u001b[35mtext\u001b[0m: The test case could not be fully executed because the application does not support a 'lion' pet type.\n\n**What was completed:**\n- ✅ Navigated to http:/..., \u001b[35msuccess\u001b[0m: False, \u001b[35mfiles_to_display\u001b[0m: []"
+      },
+      "timestamp": 1793783544.4805791,
+      "execution_index": 1
+    },
+    {
+      "type": "browser_internal_step",
+      "data": {
+        "agent": "browser",
+        "step": 1,
+        "call_id": "1:browser",
+        "internal_step": 3,
+        "kind": "browser_use_log",
+        "text": "📋 Plan updated with 5 steps"
+      },
+      "timestamp": 1793783544.480589,
+      "execution_index": 1
+    },
+    {
+      "type": "agent_decision",
+      "data": {
+        "step": 1,
+        "agent": "browser",
+        "call_id": "1:browser",
+        "decision_type": "stop",
+        "payload": "The test case could not be fully executed because the application does not support a 'lion' pet type.\n\n**What was completed:**\n- ✅ Navigated to http://localhost:8080/owners/1/pets/new (New Pet form for George Franklin)\n- ✅ Filled Name field with \"Simba\"\n- ✅ Filled Birth Date with \"2023-05-12\"\n\n**What could NOT be completed:**\n- ❌ Selecting \"lion\" as the Type — The Type dropdown only offers these options: **bird, cat, dog, hamster, lizard, snake**. There is no \"lion\" option available.\n\n**Conclusion:** The test case fails at the \"When\" step because the web application does not provide a \"lion\" option in the pet type dropdown. The form cannot be submitted with a lion-type pet since that category does not exist in the system."
+      },
+      "timestamp": 1793783549.249464,
+      "execution_index": 1
+    },
+    {
+      "type": "step_complete",
+      "data": {
+        "step": 1
+      },
+      "timestamp": 1793783549.2494798,
+      "execution_index": 1
+    },
+    {
+      "type": "stopped",
+      "data": {
+        "step": 1
+      },
+      "timestamp": 1793783549.2494836,
+      "execution_index": 1
+    }
+  ]
+}

@@ -1,0 +1,662 @@
+{
+  "id": "a281c18c-a18c-4cf8-8cf0-bc3a0867f347",
+  "configuration": "FourAgentConfiguration_STATE",
+  "provider": "vllm",
+  "model": "Qwen/Qwen3.8-27B-FP8 - Reasoning OFF",
+  "task": "Given this is the current URL: \"http://localhost:8080/owners/new\"\nWhen I add a person with first name \"John\" and last name \"Smith\" as a new pet owner\nThen \"John Smith\" is an owner",
+  "base_url": null,
+  "num_task_executions": 1,
+  "max_iterations": 50,
+  "vision_enabled": true,
+  "record_video": true,
+  "video_available": true,
+  "archived": true,
+  "undeletable": false,
+  "status": "completed",
+  "current_execution": 1,
+  "error": null,
+  "statistics": {
+    "iterations": 3,
+    "llm_calls": 10,
+    "tokens_by_agent": {
+      "analyst": {
+        "prompt_tokens": 14872,
+        "completion_tokens": 3039,
+        "total_tokens": 17911,
+        "calls": 3
+      },
+      "coordinator": {
+        "prompt_tokens": 4065,
+        "completion_tokens": 182,
+        "total_tokens": 4247,
+        "calls": 3
+      },
+      "browser": {
+        "prompt_tokens": 42759,
+        "completion_tokens": 1535,
+        "total_tokens": 44294,
+        "calls": 2
+      },
+      "observer": {
+        "prompt_tokens": 2231,
+        "completion_tokens": 230,
+        "total_tokens": 2461,
+        "calls": 2
+      }
+    },
+    "tokens_total": {
+      "prompt_tokens": 63927,
+      "completion_tokens": 4986,
+      "total_tokens": 68913
+    }
+  },
+  "result": {
+    "step": 3,
+    "message": "Stop execution (PASSED): The new owner \"John Smith\" was successfully created and is now visible as an owner in the system, as evidenced by the owner detail page at `/owners/25` displaying the name \"John Smith\".",
+    "passed": true
+  },
+  "created_at": "2026-10-29T13:44:33.815403+00:00",
+  "updated_at": "2026-10-29T13:46:06.725724+00:00",
+  "events": [
+    {
+      "type": "step_start",
+      "data": {
+        "step": 1
+      },
+      "timestamp": 1793281475.977695,
+      "execution_index": 1
+    },
+    {
+      "type": "agent_decision",
+      "data": {
+        "step": 1,
+        "agent": "analyst",
+        "call_id": "1:analyst",
+        "decision_type": "continue",
+        "payload": "1. Current test objective:\nThe goal is to navigate to the \"New Owner\" page (`http://localhost:8080/owners/new`), fill in the form with first name \"John\" and last name \"Smith\", submit it, and verify that \"John Smith\" appears as an owner.\n\n2. Observed state summary:\nThe current URL is `about:blank` and the DOM is empty. This indicates that the browser has not yet navigated to the target application URL specified in the test case (`http://localhost:8080/owners/new`). The previous tool calls were attempts to check for elements on the current (blank) page, which naturally returned empty results.\n\n3. Next action to perform:\nThe first step is to navigate to the specified URL. I need to instruct the system to go to `http://localhost:8080/owners/new`.\n\nSince I am the Analyst agent and my role is to decide the *next high-level action*, I will specify that the next action is to navigate to the target URL.\n\n**Next Action:** Navigate to `http://localhost:8080/owners/new`."
+      },
+      "timestamp": 1793281494.7442057,
+      "execution_index": 1
+    },
+    {
+      "type": "agent_decision",
+      "data": {
+        "step": 1,
+        "agent": "coordinator",
+        "call_id": "1:coordinator",
+        "decision_type": "continue",
+        "payload": "NAVIGATE:TO:http://localhost:8080/owners/new"
+      },
+      "timestamp": 1793281495.7688134,
+      "execution_index": 1
+    },
+    {
+      "type": "browser_internal_step",
+      "data": {
+        "agent": "browser",
+        "step": 1,
+        "call_id": "1:browser",
+        "internal_step": 0,
+        "kind": "browser_use_log",
+        "text": "▶️   \u001b[34mnavigate\u001b[0m: \u001b[35murl\u001b[0m: http://localhost:8080/owners/new, \u001b[35mnew_tab\u001b[0m: False"
+      },
+      "timestamp": 1793281496.3366513,
+      "execution_index": 1
+    },
+    {
+      "type": "browser_internal_step",
+      "data": {
+        "agent": "browser",
+        "step": 1,
+        "call_id": "1:browser",
+        "internal_step": 1,
+        "kind": "browser_use_log",
+        "text": "📍 Step 1:"
+      },
+      "timestamp": 1793281497.1786053,
+      "execution_index": 1
+    },
+    {
+      "type": "browser_internal_step",
+      "data": {
+        "agent": "browser",
+        "step": 1,
+        "call_id": "1:browser",
+        "internal_step": 1,
+        "kind": "browser_use_log",
+        "text": "🧠 Memory: Task was just to navigate to the owners/new page. Done - page loaded successfully showing the owner form."
+      },
+      "timestamp": 1793281500.7809863,
+      "execution_index": 1
+    },
+    {
+      "type": "browser_internal_step",
+      "data": {
+        "agent": "browser",
+        "step": 1,
+        "call_id": "1:browser",
+        "internal_step": 1,
+        "kind": "screenshot",
+        "screenshot": {
+          "filename": "step_1_1.png",
+          "task_id": "a281c18c-a18c-4cf8-8cf0-bc3a0867f347",
+          "url": "/api/tasks/a281c18c-a18c-4cf8-8cf0-bc3a0867f347/screenshots/step_1_1.png"
+        }
+      },
+      "timestamp": 1793281500.8753488,
+      "execution_index": 1
+    },
+    {
+      "type": "browser_internal_step",
+      "data": {
+        "agent": "browser",
+        "step": 1,
+        "call_id": "1:browser",
+        "internal_step": 1,
+        "kind": "browser_use_log",
+        "text": "▶️   \u001b[34mdone\u001b[0m: \u001b[35mtext\u001b[0m: Successfully navigated to http://localhost:8080/owners/new. The PetClinic 'Add Owner' form is displayed with fields for First Name, Last Name, Address..., \u001b[35msuccess\u001b[0m: True, \u001b[35mfiles_to_display\u001b[0m: []"
+      },
+      "timestamp": 1793281500.8784928,
+      "execution_index": 1
+    },
+    {
+      "type": "browser_internal_step",
+      "data": {
+        "agent": "browser",
+        "step": 1,
+        "call_id": "1:browser",
+        "internal_step": 1,
+        "kind": "browser_use_log",
+        "text": "📋 Plan updated with 0 steps"
+      },
+      "timestamp": 1793281500.8785055,
+      "execution_index": 1
+    },
+    {
+      "type": "browser_internal_step",
+      "data": {
+        "agent": "browser",
+        "step": 1,
+        "call_id": "1:browser",
+        "internal_step": 1,
+        "kind": "browser_use_log",
+        "text": "✅ Task completed successfully"
+      },
+      "timestamp": 1793281501.2859683,
+      "execution_index": 1
+    },
+    {
+      "type": "agent_decision",
+      "data": {
+        "step": 1,
+        "agent": "browser",
+        "call_id": "1:browser",
+        "decision_type": "continue",
+        "payload": "Successfully navigated to http://localhost:8080/owners/new. The PetClinic 'Add Owner' form is displayed with fields for First Name, Last Name, Address, City, and Telephone."
+      },
+      "timestamp": 1793281503.7614594,
+      "execution_index": 1
+    },
+    {
+      "type": "agent_decision",
+      "data": {
+        "step": 1,
+        "agent": "observer",
+        "call_id": "1:observer",
+        "decision_type": "continue",
+        "payload": "Status: ON_TRACK\nReason: The browser successfully navigated to the specified URL and the page content matches the expected \"Add Owner\" form.\nExpected vs Observed: Expected to be on http://localhost:8080/owners/new with an owner creation form. Observed the correct URL and the form fields (First Name, Last Name, Address, City, Telephone) along with the submit button.\nRecommended adjustment: None."
+      },
+      "timestamp": 1793281506.6616075,
+      "execution_index": 1
+    },
+    {
+      "type": "step_complete",
+      "data": {
+        "step": 1
+      },
+      "timestamp": 1793281506.6616223,
+      "execution_index": 1
+    },
+    {
+      "type": "step_start",
+      "data": {
+        "step": 2
+      },
+      "timestamp": 1793281506.6616259,
+      "execution_index": 1
+    },
+    {
+      "type": "agent_decision",
+      "data": {
+        "step": 2,
+        "agent": "analyst",
+        "call_id": "2:analyst",
+        "decision_type": "continue",
+        "payload": "1. Current test objective:\nAdd a new pet owner with first name \"John\" and last name \"Smith\" via the form at `http://localhost:8080/owners/new`, then verify that \"John Smith\" appears as an owner (e.g., in the owners list).\n\n2. Observed state summary:\nThe page is loaded at `http://localhost:8080/owners/new` and displays the \"Add Owner\" form with empty input fields for First Name, Last Name, Address, City, and Telephone, plus an \"Add Owner\" submit button. No data has been entered yet.\n\n3. Next action to perform:\nFill in the form fields with the required and sensible values:\n- First Name: \"John\"\n- Last Name: \"Smith\"\n- Address: \"123 Main St\"\n- City: \"Springfield\"\n- Telephone: \"555-1234\"\n\nThen click the \"Add Owner\" submit button."
+      },
+      "timestamp": 1793281518.1284258,
+      "execution_index": 1
+    },
+    {
+      "type": "agent_decision",
+      "data": {
+        "step": 2,
+        "agent": "coordinator",
+        "call_id": "2:coordinator",
+        "decision_type": "continue",
+        "payload": "FILL_FORM:{firstName:John,lastName:Smith,address:123 Main St,city:Springfield,telephone:555-1234}"
+      },
+      "timestamp": 1793281519.486042,
+      "execution_index": 1
+    },
+    {
+      "type": "browser_internal_step",
+      "data": {
+        "agent": "browser",
+        "step": 2,
+        "call_id": "2:browser",
+        "internal_step": 1,
+        "kind": "browser_use_log",
+        "text": "📍 Step 1:"
+      },
+      "timestamp": 1793281520.5921845,
+      "execution_index": 1
+    },
+    {
+      "type": "browser_internal_step",
+      "data": {
+        "agent": "browser",
+        "step": 2,
+        "call_id": "2:browser",
+        "internal_step": 1,
+        "kind": "browser_use_log",
+        "text": "❔ Eval: Initialized on the owner form page. Verdict: Ready to fill"
+      },
+      "timestamp": 1793281524.047475,
+      "execution_index": 1
+    },
+    {
+      "type": "browser_internal_step",
+      "data": {
+        "agent": "browser",
+        "step": 2,
+        "call_id": "2:browser",
+        "internal_step": 1,
+        "kind": "browser_use_log",
+        "text": "🧠 Memory: Filling owner form: John Smith, 123 Main St, Springfield, 555-1234"
+      },
+      "timestamp": 1793281524.0474849,
+      "execution_index": 1
+    },
+    {
+      "type": "browser_internal_step",
+      "data": {
+        "agent": "browser",
+        "step": 2,
+        "call_id": "2:browser",
+        "internal_step": 1,
+        "kind": "screenshot",
+        "screenshot": {
+          "filename": "step_2_1.png",
+          "task_id": "a281c18c-a18c-4cf8-8cf0-bc3a0867f347",
+          "url": "/api/tasks/a281c18c-a18c-4cf8-8cf0-bc3a0867f347/screenshots/step_2_1.png"
+        }
+      },
+      "timestamp": 1793281524.14355,
+      "execution_index": 1
+    },
+    {
+      "type": "browser_internal_step",
+      "data": {
+        "agent": "browser",
+        "step": 2,
+        "call_id": "2:browser",
+        "internal_step": 1,
+        "kind": "browser_use_log",
+        "text": "▶️  [1/6] \u001b[34minput\u001b[0m: \u001b[35mindex\u001b[0m: 6, \u001b[35mtext\u001b[0m: John, \u001b[35mclear\u001b[0m: True"
+      },
+      "timestamp": 1793281524.146604,
+      "execution_index": 1
+    },
+    {
+      "type": "browser_internal_step",
+      "data": {
+        "agent": "browser",
+        "step": 2,
+        "call_id": "2:browser",
+        "internal_step": 1,
+        "kind": "browser_use_log",
+        "text": "▶️  [2/6] \u001b[34minput\u001b[0m: \u001b[35mindex\u001b[0m: 7, \u001b[35mtext\u001b[0m: Smith, \u001b[35mclear\u001b[0m: True"
+      },
+      "timestamp": 1793281524.4643962,
+      "execution_index": 1
+    },
+    {
+      "type": "browser_internal_step",
+      "data": {
+        "agent": "browser",
+        "step": 2,
+        "call_id": "2:browser",
+        "internal_step": 1,
+        "kind": "browser_use_log",
+        "text": "▶️  [3/6] \u001b[34minput\u001b[0m: \u001b[35mindex\u001b[0m: 8, \u001b[35mtext\u001b[0m: 123 Main St, \u001b[35mclear\u001b[0m: True"
+      },
+      "timestamp": 1793281524.802666,
+      "execution_index": 1
+    },
+    {
+      "type": "browser_internal_step",
+      "data": {
+        "agent": "browser",
+        "step": 2,
+        "call_id": "2:browser",
+        "internal_step": 1,
+        "kind": "browser_use_log",
+        "text": "▶️  [4/6] \u001b[34minput\u001b[0m: \u001b[35mindex\u001b[0m: 9, \u001b[35mtext\u001b[0m: Springfield, \u001b[35mclear\u001b[0m: True"
+      },
+      "timestamp": 1793281525.3493748,
+      "execution_index": 1
+    },
+    {
+      "type": "browser_internal_step",
+      "data": {
+        "agent": "browser",
+        "step": 2,
+        "call_id": "2:browser",
+        "internal_step": 1,
+        "kind": "browser_use_log",
+        "text": "▶️  [5/6] \u001b[34minput\u001b[0m: \u001b[35mindex\u001b[0m: 10, \u001b[35mtext\u001b[0m: 555-1234, \u001b[35mclear\u001b[0m: True"
+      },
+      "timestamp": 1793281525.883724,
+      "execution_index": 1
+    },
+    {
+      "type": "browser_internal_step",
+      "data": {
+        "agent": "browser",
+        "step": 2,
+        "call_id": "2:browser",
+        "internal_step": 1,
+        "kind": "browser_use_log",
+        "text": "▶️  [6/6] \u001b[34mclick\u001b[0m: \u001b[35mindex\u001b[0m: 194"
+      },
+      "timestamp": 1793281526.3158364,
+      "execution_index": 1
+    },
+    {
+      "type": "browser_internal_step",
+      "data": {
+        "agent": "browser",
+        "step": 2,
+        "call_id": "2:browser",
+        "internal_step": 1,
+        "kind": "browser_use_log",
+        "text": "📋 Plan updated with 2 steps"
+      },
+      "timestamp": 1793281527.5821934,
+      "execution_index": 1
+    },
+    {
+      "type": "browser_internal_step",
+      "data": {
+        "agent": "browser",
+        "step": 2,
+        "call_id": "2:browser",
+        "internal_step": 2,
+        "kind": "browser_use_log",
+        "text": "📍 Step 2:"
+      },
+      "timestamp": 1793281528.2118063,
+      "execution_index": 1
+    },
+    {
+      "type": "browser_internal_step",
+      "data": {
+        "agent": "browser",
+        "step": 2,
+        "call_id": "2:browser",
+        "internal_step": 2,
+        "kind": "browser_use_log",
+        "text": "🧠 Memory: Telephone field requires numeric value only (no hyphens). Need to re-enter as '5551234'."
+      },
+      "timestamp": 1793281533.158994,
+      "execution_index": 1
+    },
+    {
+      "type": "browser_internal_step",
+      "data": {
+        "agent": "browser",
+        "step": 2,
+        "call_id": "2:browser",
+        "internal_step": 2,
+        "kind": "screenshot",
+        "screenshot": {
+          "filename": "step_2_2.png",
+          "task_id": "a281c18c-a18c-4cf8-8cf0-bc3a0867f347",
+          "url": "/api/tasks/a281c18c-a18c-4cf8-8cf0-bc3a0867f347/screenshots/step_2_2.png"
+        }
+      },
+      "timestamp": 1793281533.2603276,
+      "execution_index": 1
+    },
+    {
+      "type": "browser_internal_step",
+      "data": {
+        "agent": "browser",
+        "step": 2,
+        "call_id": "2:browser",
+        "internal_step": 2,
+        "kind": "browser_use_log",
+        "text": "▶️  [1/3] \u001b[34minput\u001b[0m: \u001b[35mindex\u001b[0m: 269, \u001b[35mtext\u001b[0m: , \u001b[35mclear\u001b[0m: True"
+      },
+      "timestamp": 1793281533.263094,
+      "execution_index": 1
+    },
+    {
+      "type": "browser_internal_step",
+      "data": {
+        "agent": "browser",
+        "step": 2,
+        "call_id": "2:browser",
+        "internal_step": 2,
+        "kind": "browser_use_log",
+        "text": "▶️  [2/3] \u001b[34minput\u001b[0m: \u001b[35mindex\u001b[0m: 269, \u001b[35mtext\u001b[0m: 5551234, \u001b[35mclear\u001b[0m: True"
+      },
+      "timestamp": 1793281533.4681363,
+      "execution_index": 1
+    },
+    {
+      "type": "browser_internal_step",
+      "data": {
+        "agent": "browser",
+        "step": 2,
+        "call_id": "2:browser",
+        "internal_step": 2,
+        "kind": "browser_use_log",
+        "text": "▶️  [3/3] \u001b[34mclick\u001b[0m: \u001b[35mindex\u001b[0m: 457"
+      },
+      "timestamp": 1793281533.8638587,
+      "execution_index": 1
+    },
+    {
+      "type": "browser_internal_step",
+      "data": {
+        "agent": "browser",
+        "step": 2,
+        "call_id": "2:browser",
+        "internal_step": 2,
+        "kind": "browser_use_log",
+        "text": "📋 Plan updated with 2 steps"
+      },
+      "timestamp": 1793281535.2008643,
+      "execution_index": 1
+    },
+    {
+      "type": "browser_internal_step",
+      "data": {
+        "agent": "browser",
+        "step": 2,
+        "call_id": "2:browser",
+        "internal_step": 3,
+        "kind": "browser_use_log",
+        "text": "📍 Step 3:"
+      },
+      "timestamp": 1793281535.7385416,
+      "execution_index": 1
+    },
+    {
+      "type": "browser_internal_step",
+      "data": {
+        "agent": "browser",
+        "step": 2,
+        "call_id": "2:browser",
+        "internal_step": 3,
+        "kind": "browser_use_log",
+        "text": "🧠 Memory: Form successfully submitted. Owner John Smith created with address 123 Main St, city Springfield, telephone 5551234 (had to remove hyphen due to validation)."
+      },
+      "timestamp": 1793281542.0894794,
+      "execution_index": 1
+    },
+    {
+      "type": "browser_internal_step",
+      "data": {
+        "agent": "browser",
+        "step": 2,
+        "call_id": "2:browser",
+        "internal_step": 3,
+        "kind": "screenshot",
+        "screenshot": {
+          "filename": "step_2_3.png",
+          "task_id": "a281c18c-a18c-4cf8-8cf0-bc3a0867f347",
+          "url": "/api/tasks/a281c18c-a18c-4cf8-8cf0-bc3a0867f347/screenshots/step_2_3.png"
+        }
+      },
+      "timestamp": 1793281542.182962,
+      "execution_index": 1
+    },
+    {
+      "type": "browser_internal_step",
+      "data": {
+        "agent": "browser",
+        "step": 2,
+        "call_id": "2:browser",
+        "internal_step": 3,
+        "kind": "browser_use_log",
+        "text": "▶️   \u001b[34mdone\u001b[0m: \u001b[35mtext\u001b[0m: Successfully filled and submitted the owner form with the following data:\n- First Name: John\n- Last Name: Smith\n- Address: 123 Main St\n- City: Springf..., \u001b[35msuccess\u001b[0m: True, \u001b[35mfiles_to_display\u001b[0m: []"
+      },
+      "timestamp": 1793281542.186977,
+      "execution_index": 1
+    },
+    {
+      "type": "browser_internal_step",
+      "data": {
+        "agent": "browser",
+        "step": 2,
+        "call_id": "2:browser",
+        "internal_step": 3,
+        "kind": "browser_use_log",
+        "text": "📋 Plan updated with 2 steps"
+      },
+      "timestamp": 1793281542.1869924,
+      "execution_index": 1
+    },
+    {
+      "type": "browser_internal_step",
+      "data": {
+        "agent": "browser",
+        "step": 2,
+        "call_id": "2:browser",
+        "internal_step": 3,
+        "kind": "browser_use_log",
+        "text": "✅ Task completed successfully"
+      },
+      "timestamp": 1793281542.6823921,
+      "execution_index": 1
+    },
+    {
+      "type": "agent_decision",
+      "data": {
+        "step": 2,
+        "agent": "browser",
+        "call_id": "2:browser",
+        "decision_type": "continue",
+        "payload": "Successfully filled and submitted the owner form with the following data:\n- First Name: John\n- Last Name: Smith\n- Address: 123 Main St\n- City: Springfield\n- Telephone: 5551234 (entered as digits only due to form validation requiring numeric values)\n\nThe owner record was created and is now displayed on the owner detail page."
+      },
+      "timestamp": 1793281546.0458374,
+      "execution_index": 1
+    },
+    {
+      "type": "agent_decision",
+      "data": {
+        "step": 2,
+        "agent": "observer",
+        "call_id": "2:observer",
+        "decision_type": "continue",
+        "payload": "Status: ON_TRACK\nReason: The form was successfully filled and submitted, resulting in the creation of a new owner record with the correct details.\nExpected vs Observed: Expected an owner record with Name \"John Smith\", Address \"123 Main St\", City \"Springfield\", and Telephone \"555-1234\". Observed the owner detail page showing Name \"John Smith\", Address \"123 Main St\", City \"Springfield\", and Telephone \"5551234\". The telephone number was adjusted to remove the hyphen to satisfy form validation constraints, which is an acceptable adaptation to complete the task.\nRecommended adjustment: None."
+      },
+      "timestamp": 1793281548.84958,
+      "execution_index": 1
+    },
+    {
+      "type": "step_complete",
+      "data": {
+        "step": 2
+      },
+      "timestamp": 1793281548.8495967,
+      "execution_index": 1
+    },
+    {
+      "type": "step_start",
+      "data": {
+        "step": 3
+      },
+      "timestamp": 1793281548.8495998,
+      "execution_index": 1
+    },
+    {
+      "type": "agent_decision",
+      "data": {
+        "step": 3,
+        "agent": "analyst",
+        "call_id": "3:analyst",
+        "decision_type": "continue",
+        "payload": "1. **Current test objective:**\n   Verify that after adding a new pet owner with first name \"John\" and last name \"Smith\", the system correctly identifies \"John Smith\" as an owner.\n\n2. **Observed state summary:**\n   The current URL is `http://localhost:8080/owners/25`, which indicates the application has successfully created a new owner record and redirected to the detail page for that owner. The page displays \"Owner Information\" with the Name field showing \"John Smith\". This confirms that the owner was created successfully and is now recognized by the system.\n\n3. **Next action to perform:**\n   The test case has been executed successfully. The precondition (navigating to the new owner page) was met, the action (adding John Smith) was performed, and the expected result (\"John Smith\" is an owner) is verified by the current state showing the owner's detail page with the correct name. Therefore, the test should be stopped with a success verdict.\n\n   **Verdict: PASS**\n   **Reason:** The new owner \"John Smith\" was successfully created and is now visible as an owner in the system, as evidenced by the owner detail page at `/owners/25` displaying the name \"John Smith\"."
+      },
+      "timestamp": 1793281565.4427805,
+      "execution_index": 1
+    },
+    {
+      "type": "agent_decision",
+      "data": {
+        "step": 3,
+        "agent": "coordinator",
+        "call_id": "3:coordinator",
+        "decision_type": "stop",
+        "payload": {
+          "message": "Stop execution (PASSED): The new owner \"John Smith\" was successfully created and is now visible as an owner in the system, as evidenced by the owner detail page at `/owners/25` displaying the name \"John Smith\".",
+          "passed": true
+        }
+      },
+      "timestamp": 1793281566.4436364,
+      "execution_index": 1
+    },
+    {
+      "type": "step_complete",
+      "data": {
+        "step": 3
+      },
+      "timestamp": 1793281566.4436586,
+      "execution_index": 1
+    },
+    {
+      "type": "completed",
+      "data": {
+        "step": 3,
+        "message": "Stop execution (PASSED): The new owner \"John Smith\" was successfully created and is now visible as an owner in the system, as evidenced by the owner detail page at `/owners/25` displaying the name \"John Smith\".",
+        "passed": true
+      },
+      "timestamp": 1793281566.4436634,
+      "execution_index": 1
+    }
+  ]
+}

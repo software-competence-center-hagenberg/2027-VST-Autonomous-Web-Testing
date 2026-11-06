@@ -1,0 +1,636 @@
+{
+  "id": "d8217a39-8467-4f62-8d1d-450f522f8791",
+  "configuration": "FourAgentConfiguration_STATE",
+  "provider": "vllm",
+  "model": "Qwen/Qwen3.8-27B-FP8 - Reasoning OFF",
+  "task": "Given this is the current URL: \"http://localhost:8080/owners/new\"\nWhen I add a person with first name \"Jackie\" and last name \"Chan\" as a new pet owner with address \"345 Jack Street\" with city \"Springfield\" and phone number \"7266/61936\"\nThen \"Jackie Chan\" is added as an owner",
+  "base_url": "http://localhost:8080/",
+  "num_task_executions": 1,
+  "max_iterations": 50,
+  "vision_enabled": true,
+  "record_video": true,
+  "video_available": true,
+  "archived": true,
+  "undeletable": false,
+  "status": "failed",
+  "current_execution": 1,
+  "error": "Task stopped before completion: Stop execution (STOPPED): The test failed because the provided phone number \"7266/61936\" contains a non-numeric character ('/'), which is rejected by the application's validation rules. The owner \"Jackie Chan\" could not be added as required by the test case.",
+  "statistics": {
+    "iterations": 3,
+    "llm_calls": 10,
+    "tokens_by_agent": {
+      "analyst": {
+        "prompt_tokens": 9956,
+        "completion_tokens": 2063,
+        "total_tokens": 12019,
+        "calls": 3
+      },
+      "coordinator": {
+        "prompt_tokens": 4306,
+        "completion_tokens": 211,
+        "total_tokens": 4517,
+        "calls": 3
+      },
+      "browser": {
+        "prompt_tokens": 42892,
+        "completion_tokens": 1729,
+        "total_tokens": 44621,
+        "calls": 2
+      },
+      "observer": {
+        "prompt_tokens": 12609,
+        "completion_tokens": 533,
+        "total_tokens": 13142,
+        "calls": 2
+      }
+    },
+    "tokens_total": {
+      "prompt_tokens": 69763,
+      "completion_tokens": 4536,
+      "total_tokens": 74299
+    }
+  },
+  "result": {
+    "step": 3,
+    "message": "Stop execution (STOPPED): The test failed because the provided phone number \"7266/61936\" contains a non-numeric character ('/'), which is rejected by the application's validation rules. The owner \"Jackie Chan\" could not be added as required by the test case.",
+    "passed": false
+  },
+  "created_at": "2026-11-04T09:56:24.244637+00:00",
+  "updated_at": "2026-11-04T09:57:40.500093+00:00",
+  "events": [
+    {
+      "type": "step_start",
+      "data": {
+        "step": 1
+      },
+      "timestamp": 1793786186.5780761,
+      "execution_index": 1
+    },
+    {
+      "type": "agent_decision",
+      "data": {
+        "step": 1,
+        "agent": "analyst",
+        "call_id": "1:analyst",
+        "decision_type": "continue",
+        "payload": "1. **Current test objective:**\nThe goal is to navigate to the \"New Owner\" page (`http://localhost:8080/owners/new`), fill out the form with specific details (First Name: \"Jackie\", Last Name: \"Chan\", Address: \"345 Jack Street\", City: \"Springfield\", Phone: \"7266/61936\"), submit it, and verify that \"Jackie Chan\" is added as an owner.\n\n2. **Observed state summary:**\nThe current URL is `about:blank`. The DOM shows a navigation menu with links for \"Home\", \"Find owners\", \"Veterinarians\", and \"Error\", along with a \"Welcome\" text. This indicates that the application has loaded (likely the home page or a landing page), but the browser is not currently on the specific URL required for the test (`/owners/new`). The previous tool call for `id=\"form\"` returned empty, confirming we are not on the form page yet.\n\n3. **Next action to perform:**\nNavigate to the URL `http://localhost:8080/owners/new` to access the new owner creation form."
+      },
+      "timestamp": 1793786194.384761,
+      "execution_index": 1
+    },
+    {
+      "type": "agent_decision",
+      "data": {
+        "step": 1,
+        "agent": "coordinator",
+        "call_id": "1:coordinator",
+        "decision_type": "continue",
+        "payload": "NAVIGATE:TO:http://localhost:8080/owners/new"
+      },
+      "timestamp": 1793786195.112214,
+      "execution_index": 1
+    },
+    {
+      "type": "browser_internal_step",
+      "data": {
+        "agent": "browser",
+        "step": 1,
+        "call_id": "1:browser",
+        "internal_step": 0,
+        "kind": "browser_use_log",
+        "text": "▶️   \u001b[34mnavigate\u001b[0m: \u001b[35murl\u001b[0m: http://localhost:8080/owners/new, \u001b[35mnew_tab\u001b[0m: False"
+      },
+      "timestamp": 1793786195.6331947,
+      "execution_index": 1
+    },
+    {
+      "type": "browser_internal_step",
+      "data": {
+        "agent": "browser",
+        "step": 1,
+        "call_id": "1:browser",
+        "internal_step": 1,
+        "kind": "browser_use_log",
+        "text": "📍 Step 1:"
+      },
+      "timestamp": 1793786196.359713,
+      "execution_index": 1
+    },
+    {
+      "type": "browser_internal_step",
+      "data": {
+        "agent": "browser",
+        "step": 1,
+        "call_id": "1:browser",
+        "internal_step": 1,
+        "kind": "browser_use_log",
+        "text": "🧠 Memory: Task complete - navigated to http://localhost:8080/owners/new which shows the PetClinic owner creation form."
+      },
+      "timestamp": 1793786199.751012,
+      "execution_index": 1
+    },
+    {
+      "type": "browser_internal_step",
+      "data": {
+        "agent": "browser",
+        "step": 1,
+        "call_id": "1:browser",
+        "internal_step": 1,
+        "kind": "screenshot",
+        "screenshot": {
+          "filename": "step_1_1.png",
+          "task_id": "d8217a39-8467-4f62-8d1d-450f522f8791",
+          "url": "/api/tasks/d8217a39-8467-4f62-8d1d-450f522f8791/screenshots/step_1_1.png"
+        }
+      },
+      "timestamp": 1793786199.8619404,
+      "execution_index": 1
+    },
+    {
+      "type": "browser_internal_step",
+      "data": {
+        "agent": "browser",
+        "step": 1,
+        "call_id": "1:browser",
+        "internal_step": 1,
+        "kind": "browser_use_log",
+        "text": "▶️   \u001b[34mdone\u001b[0m: \u001b[35mtext\u001b[0m: Successfully navigated to http://localhost:8080/owners/new. The page displays the PetClinic 'Add Owner' form with fields for First Name, Last Name, Ad..., \u001b[35msuccess\u001b[0m: True, \u001b[35mfiles_to_display\u001b[0m: []"
+      },
+      "timestamp": 1793786199.8645034,
+      "execution_index": 1
+    },
+    {
+      "type": "browser_internal_step",
+      "data": {
+        "agent": "browser",
+        "step": 1,
+        "call_id": "1:browser",
+        "internal_step": 1,
+        "kind": "browser_use_log",
+        "text": "📋 Plan updated with 0 steps"
+      },
+      "timestamp": 1793786199.864511,
+      "execution_index": 1
+    },
+    {
+      "type": "browser_internal_step",
+      "data": {
+        "agent": "browser",
+        "step": 1,
+        "call_id": "1:browser",
+        "internal_step": 1,
+        "kind": "browser_use_log",
+        "text": "✅ Task completed successfully"
+      },
+      "timestamp": 1793786200.3106804,
+      "execution_index": 1
+    },
+    {
+      "type": "agent_decision",
+      "data": {
+        "step": 1,
+        "agent": "browser",
+        "call_id": "1:browser",
+        "decision_type": "continue",
+        "payload": "Successfully navigated to http://localhost:8080/owners/new. The page displays the PetClinic 'Add Owner' form with fields for First Name, Last Name, Address, City, and Telephone."
+      },
+      "timestamp": 1793786202.762091,
+      "execution_index": 1
+    },
+    {
+      "type": "agent_decision",
+      "data": {
+        "step": 1,
+        "agent": "observer",
+        "call_id": "1:observer",
+        "decision_type": "continue",
+        "payload": "Status: ON_TRACK\nReason: The browser successfully navigated to the specified URL and the page content matches the expected \"Add Owner\" form.\nExpected vs Observed: Expected to be at http://localhost:8080/owners/new with the owner creation form visible. Observed the correct URL and the form fields (First Name, Last Name, Address, City, Telephone) are present in the DOM.\nRecommended adjustment: None."
+      },
+      "timestamp": 1793786210.754841,
+      "execution_index": 1
+    },
+    {
+      "type": "step_complete",
+      "data": {
+        "step": 1
+      },
+      "timestamp": 1793786210.754859,
+      "execution_index": 1
+    },
+    {
+      "type": "step_start",
+      "data": {
+        "step": 2
+      },
+      "timestamp": 1793786210.7548628,
+      "execution_index": 1
+    },
+    {
+      "type": "agent_decision",
+      "data": {
+        "step": 2,
+        "agent": "analyst",
+        "call_id": "2:analyst",
+        "decision_type": "continue",
+        "payload": "1. Current test objective:\nAdd a new pet owner with the specific details: First Name \"Jackie\", Last Name \"Chan\", Address \"345 Jack Street\", City \"Springfield\", and Phone \"7266/61936\".\n\n2. Observed state summary:\nThe browser is currently at `http://localhost:8080/owners/new`. The \"Add Owner\" form is visible with empty input fields for First Name, Last Name, Address, City, and Telephone. The \"Add Owner\" submit button is present.\n\n3. Next action to perform:\nFILL_FORM:{\"firstName\": \"Jackie\", \"lastName\": \"Chan\", \"address\": \"345 Jack Street\", \"city\": \"Springfield\", \"telephone\": \"7266/61936\"}"
+      },
+      "timestamp": 1793786220.4070556,
+      "execution_index": 1
+    },
+    {
+      "type": "agent_decision",
+      "data": {
+        "step": 2,
+        "agent": "coordinator",
+        "call_id": "2:coordinator",
+        "decision_type": "continue",
+        "payload": "FILL_FORM:{\"firstName\": \"Jackie\", \"lastName\": \"Chan\", \"address\": \"345 Jack Street\", \"city\": \"Springfield\", \"telephone\": \"7266/61936\"}"
+      },
+      "timestamp": 1793786221.4918606,
+      "execution_index": 1
+    },
+    {
+      "type": "browser_internal_step",
+      "data": {
+        "agent": "browser",
+        "step": 2,
+        "call_id": "2:browser",
+        "internal_step": 1,
+        "kind": "browser_use_log",
+        "text": "📍 Step 1:"
+      },
+      "timestamp": 1793786222.594027,
+      "execution_index": 1
+    },
+    {
+      "type": "browser_internal_step",
+      "data": {
+        "agent": "browser",
+        "step": 2,
+        "call_id": "2:browser",
+        "internal_step": 1,
+        "kind": "browser_use_log",
+        "text": "❔ Eval: No previous action taken. Starting fresh on the owner form page."
+      },
+      "timestamp": 1793786226.7655282,
+      "execution_index": 1
+    },
+    {
+      "type": "browser_internal_step",
+      "data": {
+        "agent": "browser",
+        "step": 2,
+        "call_id": "2:browser",
+        "internal_step": 1,
+        "kind": "browser_use_log",
+        "text": "🧠 Memory: Filling owner form: firstName=Jackie, lastName=Chan, address=345 Jack Street, city=Springfield, telephone=7266/61936"
+      },
+      "timestamp": 1793786226.7655404,
+      "execution_index": 1
+    },
+    {
+      "type": "browser_internal_step",
+      "data": {
+        "agent": "browser",
+        "step": 2,
+        "call_id": "2:browser",
+        "internal_step": 1,
+        "kind": "screenshot",
+        "screenshot": {
+          "filename": "step_2_1.png",
+          "task_id": "d8217a39-8467-4f62-8d1d-450f522f8791",
+          "url": "/api/tasks/d8217a39-8467-4f62-8d1d-450f522f8791/screenshots/step_2_1.png"
+        }
+      },
+      "timestamp": 1793786226.8792696,
+      "execution_index": 1
+    },
+    {
+      "type": "browser_internal_step",
+      "data": {
+        "agent": "browser",
+        "step": 2,
+        "call_id": "2:browser",
+        "internal_step": 1,
+        "kind": "browser_use_log",
+        "text": "▶️  [1/5] \u001b[34minput\u001b[0m: \u001b[35mindex\u001b[0m: 132, \u001b[35mtext\u001b[0m: Jackie, \u001b[35mclear\u001b[0m: True"
+      },
+      "timestamp": 1793786226.8817468,
+      "execution_index": 1
+    },
+    {
+      "type": "browser_internal_step",
+      "data": {
+        "agent": "browser",
+        "step": 2,
+        "call_id": "2:browser",
+        "internal_step": 1,
+        "kind": "browser_use_log",
+        "text": "▶️  [2/5] \u001b[34minput\u001b[0m: \u001b[35mindex\u001b[0m: 133, \u001b[35mtext\u001b[0m: Chan, \u001b[35mclear\u001b[0m: True"
+      },
+      "timestamp": 1793786227.2744734,
+      "execution_index": 1
+    },
+    {
+      "type": "browser_internal_step",
+      "data": {
+        "agent": "browser",
+        "step": 2,
+        "call_id": "2:browser",
+        "internal_step": 1,
+        "kind": "browser_use_log",
+        "text": "▶️  [3/5] \u001b[34minput\u001b[0m: \u001b[35mindex\u001b[0m: 134, \u001b[35mtext\u001b[0m: 345 Jack Street, \u001b[35mclear\u001b[0m: True"
+      },
+      "timestamp": 1793786227.6187315,
+      "execution_index": 1
+    },
+    {
+      "type": "browser_internal_step",
+      "data": {
+        "agent": "browser",
+        "step": 2,
+        "call_id": "2:browser",
+        "internal_step": 1,
+        "kind": "browser_use_log",
+        "text": "▶️  [4/5] \u001b[34minput\u001b[0m: \u001b[35mindex\u001b[0m: 135, \u001b[35mtext\u001b[0m: Springfield, \u001b[35mclear\u001b[0m: True"
+      },
+      "timestamp": 1793786228.2561758,
+      "execution_index": 1
+    },
+    {
+      "type": "browser_internal_step",
+      "data": {
+        "agent": "browser",
+        "step": 2,
+        "call_id": "2:browser",
+        "internal_step": 1,
+        "kind": "browser_use_log",
+        "text": "▶️  [5/5] \u001b[34minput\u001b[0m: \u001b[35mindex\u001b[0m: 136, \u001b[35mtext\u001b[0m: 7266/61936, \u001b[35mclear\u001b[0m: True"
+      },
+      "timestamp": 1793786228.8110979,
+      "execution_index": 1
+    },
+    {
+      "type": "browser_internal_step",
+      "data": {
+        "agent": "browser",
+        "step": 2,
+        "call_id": "2:browser",
+        "internal_step": 1,
+        "kind": "browser_use_log",
+        "text": "📋 Plan updated with 6 steps"
+      },
+      "timestamp": 1793786229.2145605,
+      "execution_index": 1
+    },
+    {
+      "type": "browser_internal_step",
+      "data": {
+        "agent": "browser",
+        "step": 2,
+        "call_id": "2:browser",
+        "internal_step": 2,
+        "kind": "browser_use_log",
+        "text": "📍 Step 2:"
+      },
+      "timestamp": 1793786229.8582115,
+      "execution_index": 1
+    },
+    {
+      "type": "browser_internal_step",
+      "data": {
+        "agent": "browser",
+        "step": 2,
+        "call_id": "2:browser",
+        "internal_step": 2,
+        "kind": "browser_use_log",
+        "text": "🧠 Memory: All 5 fields filled correctly. Now need to click 'Add Owner' submit button (index 320) to complete the task."
+      },
+      "timestamp": 1793786233.0751212,
+      "execution_index": 1
+    },
+    {
+      "type": "browser_internal_step",
+      "data": {
+        "agent": "browser",
+        "step": 2,
+        "call_id": "2:browser",
+        "internal_step": 2,
+        "kind": "screenshot",
+        "screenshot": {
+          "filename": "step_2_2.png",
+          "task_id": "d8217a39-8467-4f62-8d1d-450f522f8791",
+          "url": "/api/tasks/d8217a39-8467-4f62-8d1d-450f522f8791/screenshots/step_2_2.png"
+        }
+      },
+      "timestamp": 1793786233.18326,
+      "execution_index": 1
+    },
+    {
+      "type": "browser_internal_step",
+      "data": {
+        "agent": "browser",
+        "step": 2,
+        "call_id": "2:browser",
+        "internal_step": 2,
+        "kind": "browser_use_log",
+        "text": "▶️   \u001b[34mclick\u001b[0m: \u001b[35mindex\u001b[0m: 320"
+      },
+      "timestamp": 1793786233.1862543,
+      "execution_index": 1
+    },
+    {
+      "type": "browser_internal_step",
+      "data": {
+        "agent": "browser",
+        "step": 2,
+        "call_id": "2:browser",
+        "internal_step": 2,
+        "kind": "browser_use_log",
+        "text": "📋 Plan updated with 6 steps"
+      },
+      "timestamp": 1793786234.469221,
+      "execution_index": 1
+    },
+    {
+      "type": "browser_internal_step",
+      "data": {
+        "agent": "browser",
+        "step": 2,
+        "call_id": "2:browser",
+        "internal_step": 3,
+        "kind": "browser_use_log",
+        "text": "📍 Step 3:"
+      },
+      "timestamp": 1793786235.0633414,
+      "execution_index": 1
+    },
+    {
+      "type": "browser_internal_step",
+      "data": {
+        "agent": "browser",
+        "step": 2,
+        "call_id": "2:browser",
+        "internal_step": 3,
+        "kind": "browser_use_log",
+        "text": "❔ Eval: Clicked 'Add Owner' button. The form was submitted but returned a validation error on the telephone field due to the slash character. However, all form fields were correctly filled with the exact values requested by the user."
+      },
+      "timestamp": 1793786241.9117427,
+      "execution_index": 1
+    },
+    {
+      "type": "browser_internal_step",
+      "data": {
+        "agent": "browser",
+        "step": 2,
+        "call_id": "2:browser",
+        "internal_step": 3,
+        "kind": "browser_use_log",
+        "text": "🧠 Memory: All 5 form fields filled correctly: firstName=Jackie, lastName=Chan, address=345 Jack Street, city=Springfield, telephone=7266/61936. Form was submitted via 'Add Owner' button. Server returned a validation error for telephone (non-numeric), but the task was to fill the form with these exact values which was accomplished."
+      },
+      "timestamp": 1793786241.9117517,
+      "execution_index": 1
+    },
+    {
+      "type": "browser_internal_step",
+      "data": {
+        "agent": "browser",
+        "step": 2,
+        "call_id": "2:browser",
+        "internal_step": 3,
+        "kind": "screenshot",
+        "screenshot": {
+          "filename": "step_2_3.png",
+          "task_id": "d8217a39-8467-4f62-8d1d-450f522f8791",
+          "url": "/api/tasks/d8217a39-8467-4f62-8d1d-450f522f8791/screenshots/step_2_3.png"
+        }
+      },
+      "timestamp": 1793786241.999884,
+      "execution_index": 1
+    },
+    {
+      "type": "browser_internal_step",
+      "data": {
+        "agent": "browser",
+        "step": 2,
+        "call_id": "2:browser",
+        "internal_step": 3,
+        "kind": "browser_use_log",
+        "text": "▶️   \u001b[34mdone\u001b[0m: \u001b[35mtext\u001b[0m: I have successfully filled in all the form fields with the provided data:\n- First Name: Jackie\n- Last Name: Chan\n- Address: 345 Jack Street\n- City: Sp..., \u001b[35msuccess\u001b[0m: True, \u001b[35mfiles_to_display\u001b[0m: []"
+      },
+      "timestamp": 1793786242.0018988,
+      "execution_index": 1
+    },
+    {
+      "type": "browser_internal_step",
+      "data": {
+        "agent": "browser",
+        "step": 2,
+        "call_id": "2:browser",
+        "internal_step": 3,
+        "kind": "browser_use_log",
+        "text": "📋 Plan updated with 6 steps"
+      },
+      "timestamp": 1793786242.0019045,
+      "execution_index": 1
+    },
+    {
+      "type": "browser_internal_step",
+      "data": {
+        "agent": "browser",
+        "step": 2,
+        "call_id": "2:browser",
+        "internal_step": 3,
+        "kind": "browser_use_log",
+        "text": "✅ Task completed successfully"
+      },
+      "timestamp": 1793786242.4599533,
+      "execution_index": 1
+    },
+    {
+      "type": "agent_decision",
+      "data": {
+        "step": 2,
+        "agent": "browser",
+        "call_id": "2:browser",
+        "decision_type": "continue",
+        "payload": "I have successfully filled in all the form fields with the provided data:\n- First Name: Jackie\n- Last Name: Chan\n- Address: 345 Jack Street\n- City: Springfield\n- Telephone: 7266/61936\n\nI then clicked 'Add Owner' to submit the form. Note: The server returned a validation error on the telephone field ('numeric value out of bounds') because '7266/61936' contains a non-numeric character (slash). However, all fields were filled exactly as specified in the task."
+      },
+      "timestamp": 1793786249.2825847,
+      "execution_index": 1
+    },
+    {
+      "type": "agent_decision",
+      "data": {
+        "step": 2,
+        "agent": "observer",
+        "call_id": "2:observer",
+        "decision_type": "continue",
+        "payload": "Status: ON_TRACK\nReason: The form fields were filled with the exact data specified in the test goal. The submission was attempted, but a validation error occurred for the telephone field because the provided value \"7266/61936\" contains a non-numeric character ('/'), which violates the form's numeric constraint. This is consistent with the test goal's data, not an execution error.\nExpected vs Observed: Expected all five fields to be populated with the given values and the form to be submitted. Observed all fields correctly populated, but submission blocked by a validation error on the telephone field due to the format of the provided data.\nRecommended adjustment: None. The execution correctly followed the test goal. The validation error is a result of the input data provided in the goal, not a deviation in execution."
+      },
+      "timestamp": 1793786251.6355405,
+      "execution_index": 1
+    },
+    {
+      "type": "step_complete",
+      "data": {
+        "step": 2
+      },
+      "timestamp": 1793786251.6355507,
+      "execution_index": 1
+    },
+    {
+      "type": "step_start",
+      "data": {
+        "step": 3
+      },
+      "timestamp": 1793786251.6355522,
+      "execution_index": 1
+    },
+    {
+      "type": "agent_decision",
+      "data": {
+        "step": 3,
+        "agent": "analyst",
+        "call_id": "3:analyst",
+        "decision_type": "continue",
+        "payload": "1. Current test objective:\nAdd a new pet owner with the specific details provided (First Name: \"Jackie\", Last Name: \"Chan\", Address: \"345 Jack Street\", City: \"Springfield\", Phone: \"7266/61936\") and verify that \"Jackie Chan\" is added as an owner.\n\n2. Observed state summary:\nThe form at `http://localhost:8080/owners/new` has been filled with the required data. However, the submission was blocked by a validation error: \"numeric value out of bounds (<10 digits>.<0 digits> expected)\" for the telephone field. The input \"7266/61936\" contains a non-numeric character ('/'), which violates the form's numeric constraint. The \"Add Owner\" button is present but the form cannot be successfully submitted with the current invalid data.\n\n3. Next action to perform:\nThe test case specifies the phone number as \"7266/61936\". The application rejects this input due to validation rules requiring a numeric value. Since the test goal is to verify that the owner is added with these specific details, and the application prevents this, the test has failed to achieve its objective. The next action is to fail the test.\n\nFAIL: The test failed because the provided phone number \"7266/61936\" contains a non-numeric character ('/'), which is rejected by the application's validation rules. The owner \"Jackie Chan\" could not be added as required by the test case."
+      },
+      "timestamp": 1793786257.3901865,
+      "execution_index": 1
+    },
+    {
+      "type": "agent_decision",
+      "data": {
+        "step": 3,
+        "agent": "coordinator",
+        "call_id": "3:coordinator",
+        "decision_type": "stop",
+        "payload": {
+          "message": "Stop execution (STOPPED): The test failed because the provided phone number \"7266/61936\" contains a non-numeric character ('/'), which is rejected by the application's validation rules. The owner \"Jackie Chan\" could not be added as required by the test case.",
+          "passed": false
+        }
+      },
+      "timestamp": 1793786260.1570654,
+      "execution_index": 1
+    },
+    {
+      "type": "step_complete",
+      "data": {
+        "step": 3
+      },
+      "timestamp": 1793786260.1570795,
+      "execution_index": 1
+    },
+    {
+      "type": "stopped",
+      "data": {
+        "step": 3,
+        "message": "Stop execution (STOPPED): The test failed because the provided phone number \"7266/61936\" contains a non-numeric character ('/'), which is rejected by the application's validation rules. The owner \"Jackie Chan\" could not be added as required by the test case.",
+        "passed": false
+      },
+      "timestamp": 1793786260.1570826,
+      "execution_index": 1
+    }
+  ]
+}

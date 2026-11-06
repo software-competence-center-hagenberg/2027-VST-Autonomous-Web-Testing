@@ -1,0 +1,294 @@
+{
+  "id": "ca3e95ec-2d71-48bb-bd17-729e66d4f06d",
+  "configuration": "BrowserOnlyConfiguration",
+  "provider": "vllm",
+  "model": "Qwen/Qwen3.8-27B-FP8 - Reasoning OFF",
+  "task": "Given this is the current URL: \"http://localhost:8080/owners/4/edit\"\nWhen I change the \"address\" of \"Harold Davis\" to \"123 Main Street\" and the \"city\" to \"Springfield\"\nThen the new \"address\" of \"Harold Davis\" is \"123 Main Street\" in the new city \"Springfield\"",
+  "base_url": "http://localhost:8080/",
+  "num_task_executions": 1,
+  "max_iterations": 50,
+  "vision_enabled": true,
+  "record_video": true,
+  "video_available": true,
+  "archived": true,
+  "undeletable": false,
+  "status": "completed",
+  "current_execution": 1,
+  "error": null,
+  "statistics": {
+    "iterations": 1,
+    "llm_calls": 1,
+    "tokens_by_agent": {
+      "browser": {
+        "prompt_tokens": 22207,
+        "completion_tokens": 1152,
+        "total_tokens": 23359,
+        "calls": 1
+      }
+    },
+    "tokens_total": {
+      "prompt_tokens": 22207,
+      "completion_tokens": 1152,
+      "total_tokens": 23359
+    }
+  },
+  "result": {
+    "step": 1
+  },
+  "created_at": "2026-11-03T10:49:38.534539+00:00",
+  "updated_at": "2026-11-03T10:51:14.070743+00:00",
+  "events": [
+    {
+      "type": "step_start",
+      "data": {
+        "step": 1
+      },
+      "timestamp": 1793702981.508751,
+      "execution_index": 1
+    },
+    {
+      "type": "browser_internal_step",
+      "data": {
+        "agent": "browser",
+        "step": 1,
+        "call_id": "1:browser",
+        "internal_step": 0,
+        "kind": "browser_use_log",
+        "text": "▶️   \u001b[34mnavigate\u001b[0m: \u001b[35murl\u001b[0m: http://localhost:8080/owners/4/edit, \u001b[35mnew_tab\u001b[0m: False"
+      },
+      "timestamp": 1793702982.063674,
+      "execution_index": 1
+    },
+    {
+      "type": "browser_internal_step",
+      "data": {
+        "agent": "browser",
+        "step": 1,
+        "call_id": "1:browser",
+        "internal_step": 1,
+        "kind": "browser_use_log",
+        "text": "📍 Step 1:"
+      },
+      "timestamp": 1793702982.9318078,
+      "execution_index": 1
+    },
+    {
+      "type": "browser_internal_step",
+      "data": {
+        "agent": "browser",
+        "step": 1,
+        "call_id": "1:browser",
+        "internal_step": 1,
+        "kind": "browser_use_log",
+        "text": "🧠 Memory: On owner edit page for Harold Davis (ID 4). Current address: '563 Friendly St.', city: 'Windsor'. Need to change address to '123 Main Street' and city to 'Springfield', then submit."
+      },
+      "timestamp": 1793703023.535098,
+      "execution_index": 1
+    },
+    {
+      "type": "browser_internal_step",
+      "data": {
+        "agent": "browser",
+        "step": 1,
+        "call_id": "1:browser",
+        "internal_step": 1,
+        "kind": "screenshot",
+        "screenshot": {
+          "filename": "step_1_1.png",
+          "task_id": "ca3e95ec-2d71-48bb-bd17-729e66d4f06d",
+          "url": "/api/tasks/ca3e95ec-2d71-48bb-bd17-729e66d4f06d/screenshots/step_1_1.png"
+        }
+      },
+      "timestamp": 1793703023.6957524,
+      "execution_index": 1
+    },
+    {
+      "type": "browser_internal_step",
+      "data": {
+        "agent": "browser",
+        "step": 1,
+        "call_id": "1:browser",
+        "internal_step": 1,
+        "kind": "browser_use_log",
+        "text": "▶️  [1/5] \u001b[34minput\u001b[0m: \u001b[35mindex\u001b[0m: 139, \u001b[35mtext\u001b[0m: , \u001b[35mclear\u001b[0m: True"
+      },
+      "timestamp": 1793703023.6980157,
+      "execution_index": 1
+    },
+    {
+      "type": "browser_internal_step",
+      "data": {
+        "agent": "browser",
+        "step": 1,
+        "call_id": "1:browser",
+        "internal_step": 1,
+        "kind": "browser_use_log",
+        "text": "▶️  [2/5] \u001b[34minput\u001b[0m: \u001b[35mindex\u001b[0m: 139, \u001b[35mtext\u001b[0m: 123 Main Street, \u001b[35mclear\u001b[0m: False"
+      },
+      "timestamp": 1793703023.8912377,
+      "execution_index": 1
+    },
+    {
+      "type": "browser_internal_step",
+      "data": {
+        "agent": "browser",
+        "step": 1,
+        "call_id": "1:browser",
+        "internal_step": 1,
+        "kind": "browser_use_log",
+        "text": "▶️  [3/5] \u001b[34minput\u001b[0m: \u001b[35mindex\u001b[0m: 140, \u001b[35mtext\u001b[0m: , \u001b[35mclear\u001b[0m: True"
+      },
+      "timestamp": 1793703024.5605283,
+      "execution_index": 1
+    },
+    {
+      "type": "browser_internal_step",
+      "data": {
+        "agent": "browser",
+        "step": 1,
+        "call_id": "1:browser",
+        "internal_step": 1,
+        "kind": "browser_use_log",
+        "text": "▶️  [4/5] \u001b[34minput\u001b[0m: \u001b[35mindex\u001b[0m: 140, \u001b[35mtext\u001b[0m: Springfield, \u001b[35mclear\u001b[0m: False"
+      },
+      "timestamp": 1793703024.7476208,
+      "execution_index": 1
+    },
+    {
+      "type": "browser_internal_step",
+      "data": {
+        "agent": "browser",
+        "step": 1,
+        "call_id": "1:browser",
+        "internal_step": 1,
+        "kind": "browser_use_log",
+        "text": "▶️  [5/5] \u001b[34mclick\u001b[0m: \u001b[35mindex\u001b[0m: 325"
+      },
+      "timestamp": 1793703025.2582047,
+      "execution_index": 1
+    },
+    {
+      "type": "browser_internal_step",
+      "data": {
+        "agent": "browser",
+        "step": 1,
+        "call_id": "1:browser",
+        "internal_step": 1,
+        "kind": "browser_use_log",
+        "text": "📋 Plan updated with 4 steps"
+      },
+      "timestamp": 1793703026.0628836,
+      "execution_index": 1
+    },
+    {
+      "type": "browser_internal_step",
+      "data": {
+        "agent": "browser",
+        "step": 1,
+        "call_id": "1:browser",
+        "internal_step": 2,
+        "kind": "browser_use_log",
+        "text": "📍 Step 2:"
+      },
+      "timestamp": 1793703026.646341,
+      "execution_index": 1
+    },
+    {
+      "type": "browser_internal_step",
+      "data": {
+        "agent": "browser",
+        "step": 1,
+        "call_id": "1:browser",
+        "internal_step": 2,
+        "kind": "browser_use_log",
+        "text": "🧠 Memory: Task complete. Harold Davis (owner ID 4) has been updated with address '123 Main Street' and city 'Springfield'. All Gherkin steps verified on the owner detail page."
+      },
+      "timestamp": 1793703065.474373,
+      "execution_index": 1
+    },
+    {
+      "type": "browser_internal_step",
+      "data": {
+        "agent": "browser",
+        "step": 1,
+        "call_id": "1:browser",
+        "internal_step": 2,
+        "kind": "screenshot",
+        "screenshot": {
+          "filename": "step_1_2.png",
+          "task_id": "ca3e95ec-2d71-48bb-bd17-729e66d4f06d",
+          "url": "/api/tasks/ca3e95ec-2d71-48bb-bd17-729e66d4f06d/screenshots/step_1_2.png"
+        }
+      },
+      "timestamp": 1793703065.5899556,
+      "execution_index": 1
+    },
+    {
+      "type": "browser_internal_step",
+      "data": {
+        "agent": "browser",
+        "step": 1,
+        "call_id": "1:browser",
+        "internal_step": 2,
+        "kind": "browser_use_log",
+        "text": "▶️   \u001b[34mdone\u001b[0m: \u001b[35mtext\u001b[0m: Gherkin test case executed successfully:\n\nGiven this is the current URL: \"http://localhost:8080/owners/4/edit\" ✓\nWhen I change the \"address\" of \"Harol..., \u001b[35msuccess\u001b[0m: True, \u001b[35mfiles_to_display\u001b[0m: []"
+      },
+      "timestamp": 1793703065.5919974,
+      "execution_index": 1
+    },
+    {
+      "type": "browser_internal_step",
+      "data": {
+        "agent": "browser",
+        "step": 1,
+        "call_id": "1:browser",
+        "internal_step": 2,
+        "kind": "browser_use_log",
+        "text": "📋 Plan updated with 4 steps"
+      },
+      "timestamp": 1793703065.5920045,
+      "execution_index": 1
+    },
+    {
+      "type": "browser_internal_step",
+      "data": {
+        "agent": "browser",
+        "step": 1,
+        "call_id": "1:browser",
+        "internal_step": 2,
+        "kind": "browser_use_log",
+        "text": "✅ Task completed successfully"
+      },
+      "timestamp": 1793703066.075855,
+      "execution_index": 1
+    },
+    {
+      "type": "agent_decision",
+      "data": {
+        "step": 1,
+        "agent": "browser",
+        "call_id": "1:browser",
+        "decision_type": "stop",
+        "payload": "Gherkin test case executed successfully:\n\nGiven this is the current URL: \"http://localhost:8080/owners/4/edit\" ✓\nWhen I change the \"address\" of \"Harold Davis\" to \"123 Main Street\" and the \"city\" to \"Springfield\" ✓\nThen the new \"address\" of \"Harold Davis\" is \"123 Main Street\" in the new city \"Springfield\" ✓\n\nVerification on http://localhost:8080/owners/4:\n- Name: Harold Davis\n- Address: 123 Main Street\n- City: Springfield\n- Telephone: 6085553198\n\nAll steps passed."
+      },
+      "timestamp": 1793703073.7819457,
+      "execution_index": 1
+    },
+    {
+      "type": "step_complete",
+      "data": {
+        "step": 1
+      },
+      "timestamp": 1793703073.7819579,
+      "execution_index": 1
+    },
+    {
+      "type": "completed",
+      "data": {
+        "step": 1
+      },
+      "timestamp": 1793703073.781961,
+      "execution_index": 1
+    }
+  ]
+}

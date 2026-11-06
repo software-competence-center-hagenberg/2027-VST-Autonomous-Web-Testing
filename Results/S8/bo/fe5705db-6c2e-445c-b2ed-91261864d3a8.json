@@ -1,0 +1,242 @@
+{
+  "id": "fe5705db-6c2e-445c-b2ed-91261864d3a8",
+  "configuration": "BrowserOnlyConfiguration",
+  "provider": "vllm",
+  "model": "Qwen/Qwen3.8-27B-FP8 - Reasoning OFF",
+  "task": "Given this is the current URL: \"http://localhost:8080/vets.html\"\nWhen I check the specialities of the veterinarians for a \"dentist\"\nThen I find the veterinarian \"Linda Douglas\" with speciality containing \"dentist\"",
+  "base_url": "http://localhost:8080/",
+  "num_task_executions": 1,
+  "max_iterations": 50,
+  "vision_enabled": true,
+  "record_video": true,
+  "video_available": true,
+  "archived": true,
+  "undeletable": false,
+  "status": "completed",
+  "current_execution": 1,
+  "error": null,
+  "statistics": {
+    "iterations": 1,
+    "llm_calls": 1,
+    "tokens_by_agent": {
+      "browser": {
+        "prompt_tokens": 22074,
+        "completion_tokens": 1035,
+        "total_tokens": 23109,
+        "calls": 1
+      }
+    },
+    "tokens_total": {
+      "prompt_tokens": 22074,
+      "completion_tokens": 1035,
+      "total_tokens": 23109
+    }
+  },
+  "result": {
+    "step": 1
+  },
+  "created_at": "2026-11-04T10:35:56.154990+00:00",
+  "updated_at": "2026-11-04T10:36:12.620932+00:00",
+  "events": [
+    {
+      "type": "step_start",
+      "data": {
+        "step": 1
+      },
+      "timestamp": 1793788558.1588492,
+      "execution_index": 1
+    },
+    {
+      "type": "browser_internal_step",
+      "data": {
+        "agent": "browser",
+        "step": 1,
+        "call_id": "1:browser",
+        "internal_step": 0,
+        "kind": "browser_use_log",
+        "text": "▶️   \u001b[34mnavigate\u001b[0m: \u001b[35murl\u001b[0m: http://localhost:8080/vets.html, \u001b[35mnew_tab\u001b[0m: False"
+      },
+      "timestamp": 1793788558.7489338,
+      "execution_index": 1
+    },
+    {
+      "type": "browser_internal_step",
+      "data": {
+        "agent": "browser",
+        "step": 1,
+        "call_id": "1:browser",
+        "internal_step": 1,
+        "kind": "browser_use_log",
+        "text": "📍 Step 1:"
+      },
+      "timestamp": 1793788559.5555458,
+      "execution_index": 1
+    },
+    {
+      "type": "browser_internal_step",
+      "data": {
+        "agent": "browser",
+        "step": 1,
+        "call_id": "1:browser",
+        "internal_step": 1,
+        "kind": "browser_use_log",
+        "text": "🧠 Memory: On vets.html page. The table shows Linda Douglas with specialties 'dentistry surgery'. The word 'dentistry' contains 'dentist' as substring, so the test assertion should pass."
+      },
+      "timestamp": 1793788562.9631526,
+      "execution_index": 1
+    },
+    {
+      "type": "browser_internal_step",
+      "data": {
+        "agent": "browser",
+        "step": 1,
+        "call_id": "1:browser",
+        "internal_step": 1,
+        "kind": "screenshot",
+        "screenshot": {
+          "filename": "step_1_1.png",
+          "task_id": "fe5705db-6c2e-445c-b2ed-91261864d3a8",
+          "url": "/api/tasks/fe5705db-6c2e-445c-b2ed-91261864d3a8/screenshots/step_1_1.png"
+        }
+      },
+      "timestamp": 1793788563.042375,
+      "execution_index": 1
+    },
+    {
+      "type": "browser_internal_step",
+      "data": {
+        "agent": "browser",
+        "step": 1,
+        "call_id": "1:browser",
+        "internal_step": 1,
+        "kind": "browser_use_log",
+        "text": "▶️   \u001b[34msearch_page\u001b[0m: \u001b[35mpattern\u001b[0m: dentist, \u001b[35mregex\u001b[0m: False, \u001b[35mcase_sensitive\u001b[0m: False, \u001b[35mcontext_chars\u001b[0m: 50, \u001b[35mcss_scope\u001b[0m: , \u001b[35mmax_results\u001b[0m: 10"
+      },
+      "timestamp": 1793788563.0447795,
+      "execution_index": 1
+    },
+    {
+      "type": "browser_internal_step",
+      "data": {
+        "agent": "browser",
+        "step": 1,
+        "call_id": "1:browser",
+        "internal_step": 1,
+        "kind": "browser_use_log",
+        "text": "📋 Plan updated with 1 steps"
+      },
+      "timestamp": 1793788563.0511193,
+      "execution_index": 1
+    },
+    {
+      "type": "browser_internal_step",
+      "data": {
+        "agent": "browser",
+        "step": 1,
+        "call_id": "1:browser",
+        "internal_step": 2,
+        "kind": "browser_use_log",
+        "text": "📍 Step 2:"
+      },
+      "timestamp": 1793788563.6404383,
+      "execution_index": 1
+    },
+    {
+      "type": "browser_internal_step",
+      "data": {
+        "agent": "browser",
+        "step": 1,
+        "call_id": "1:browser",
+        "internal_step": 2,
+        "kind": "browser_use_log",
+        "text": "🧠 Memory: Test case PASSED. On vets.html, Linda Douglas has specialties 'dentistry surgery' which contains the substring 'dentist'."
+      },
+      "timestamp": 1793788568.580288,
+      "execution_index": 1
+    },
+    {
+      "type": "browser_internal_step",
+      "data": {
+        "agent": "browser",
+        "step": 1,
+        "call_id": "1:browser",
+        "internal_step": 2,
+        "kind": "screenshot",
+        "screenshot": {
+          "filename": "step_1_2.png",
+          "task_id": "fe5705db-6c2e-445c-b2ed-91261864d3a8",
+          "url": "/api/tasks/fe5705db-6c2e-445c-b2ed-91261864d3a8/screenshots/step_1_2.png"
+        }
+      },
+      "timestamp": 1793788568.667003,
+      "execution_index": 1
+    },
+    {
+      "type": "browser_internal_step",
+      "data": {
+        "agent": "browser",
+        "step": 1,
+        "call_id": "1:browser",
+        "internal_step": 2,
+        "kind": "browser_use_log",
+        "text": "▶️   \u001b[34mdone\u001b[0m: \u001b[35mtext\u001b[0m: Test case PASSED ✅\n\nGherkin execution results:\n- Given: Current URL is http://localhost:8080/vets.html — VERIFIED (page loaded successfully)\n- When: C..., \u001b[35msuccess\u001b[0m: True, \u001b[35mfiles_to_display\u001b[0m: []"
+      },
+      "timestamp": 1793788568.6708596,
+      "execution_index": 1
+    },
+    {
+      "type": "browser_internal_step",
+      "data": {
+        "agent": "browser",
+        "step": 1,
+        "call_id": "1:browser",
+        "internal_step": 2,
+        "kind": "browser_use_log",
+        "text": "📋 Plan updated with 1 steps"
+      },
+      "timestamp": 1793788568.6708722,
+      "execution_index": 1
+    },
+    {
+      "type": "browser_internal_step",
+      "data": {
+        "agent": "browser",
+        "step": 1,
+        "call_id": "1:browser",
+        "internal_step": 2,
+        "kind": "browser_use_log",
+        "text": "✅ Task completed successfully"
+      },
+      "timestamp": 1793788569.2096505,
+      "execution_index": 1
+    },
+    {
+      "type": "agent_decision",
+      "data": {
+        "step": 1,
+        "agent": "browser",
+        "call_id": "1:browser",
+        "decision_type": "stop",
+        "payload": "Test case PASSED ✅\n\nGherkin execution results:\n- Given: Current URL is http://localhost:8080/vets.html — VERIFIED (page loaded successfully)\n- When: Checking the specialities of the veterinarians for a \"dentist\" — VERIFIED (searched page for \"dentist\", found 1 match)\n- Then: Found veterinarian \"Linda Douglas\" with speciality containing \"dentist\" — VERIFIED (Linda Douglas is listed with specialties \"dentistry surgery\", and \"dentistry\" contains the substring \"dentist\")\n\nThe veterinarians table on the page shows:\n- James Carter: none\n- Helen Leary: radiology\n- Linda Douglas: dentistry, surgery\n- Rafael Ortega: surgery\n- Henry Stevens: radiology\n\nAll assertions passed successfully."
+      },
+      "timestamp": 1793788572.2743928,
+      "execution_index": 1
+    },
+    {
+      "type": "step_complete",
+      "data": {
+        "step": 1
+      },
+      "timestamp": 1793788572.2744143,
+      "execution_index": 1
+    },
+    {
+      "type": "completed",
+      "data": {
+        "step": 1
+      },
+      "timestamp": 1793788572.274418,
+      "execution_index": 1
+    }
+  ]
+}

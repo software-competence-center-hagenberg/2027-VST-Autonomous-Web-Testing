@@ -1,0 +1,294 @@
+{
+  "id": "dfbe4e4d-54c4-4aec-b8ef-703165bcaa90",
+  "configuration": "BrowserOnlyConfiguration",
+  "provider": "vllm",
+  "model": "Qwen/Qwen3.8-27B-FP8 - Reasoning OFF",
+  "task": "Given this is the current URL: \"http://localhost:8080/owners/new\"\nWhen I add a person with first name \"Jackie\" and last name \"Chan\" as a new pet owner with address \"345 Jack Street\" with city \"Springfield\" and phone number \"7266/61936\"\nThen \"Jackie Chan\" is added as an owner",
+  "base_url": "http://localhost:8080/",
+  "num_task_executions": 1,
+  "max_iterations": 50,
+  "vision_enabled": true,
+  "record_video": true,
+  "video_available": true,
+  "archived": true,
+  "undeletable": false,
+  "status": "failed",
+  "current_execution": 1,
+  "error": "Task stopped before completion",
+  "statistics": {
+    "iterations": 1,
+    "llm_calls": 1,
+    "tokens_by_agent": {
+      "browser": {
+        "prompt_tokens": 22308,
+        "completion_tokens": 1426,
+        "total_tokens": 23734,
+        "calls": 1
+      }
+    },
+    "tokens_total": {
+      "prompt_tokens": 22308,
+      "completion_tokens": 1426,
+      "total_tokens": 23734
+    }
+  },
+  "result": {
+    "step": 1
+  },
+  "created_at": "2026-11-04T09:43:14.415204+00:00",
+  "updated_at": "2026-11-04T09:43:43.825346+00:00",
+  "events": [
+    {
+      "type": "step_start",
+      "data": {
+        "step": 1
+      },
+      "timestamp": 1793785396.290262,
+      "execution_index": 1
+    },
+    {
+      "type": "browser_internal_step",
+      "data": {
+        "agent": "browser",
+        "step": 1,
+        "call_id": "1:browser",
+        "internal_step": 0,
+        "kind": "browser_use_log",
+        "text": "▶️   \u001b[34mnavigate\u001b[0m: \u001b[35murl\u001b[0m: http://localhost:8080/owners/new, \u001b[35mnew_tab\u001b[0m: False"
+      },
+      "timestamp": 1793785396.722837,
+      "execution_index": 1
+    },
+    {
+      "type": "browser_internal_step",
+      "data": {
+        "agent": "browser",
+        "step": 1,
+        "call_id": "1:browser",
+        "internal_step": 1,
+        "kind": "browser_use_log",
+        "text": "📍 Step 1:"
+      },
+      "timestamp": 1793785397.4454453,
+      "execution_index": 1
+    },
+    {
+      "type": "browser_internal_step",
+      "data": {
+        "agent": "browser",
+        "step": 1,
+        "call_id": "1:browser",
+        "internal_step": 1,
+        "kind": "browser_use_log",
+        "text": "🧠 Memory: Filling owner form: Jackie Chan, 345 Jack Street, Springfield, 7266/61936"
+      },
+      "timestamp": 1793785403.0866141,
+      "execution_index": 1
+    },
+    {
+      "type": "browser_internal_step",
+      "data": {
+        "agent": "browser",
+        "step": 1,
+        "call_id": "1:browser",
+        "internal_step": 1,
+        "kind": "screenshot",
+        "screenshot": {
+          "filename": "step_1_1.png",
+          "task_id": "dfbe4e4d-54c4-4aec-b8ef-703165bcaa90",
+          "url": "/api/tasks/dfbe4e4d-54c4-4aec-b8ef-703165bcaa90/screenshots/step_1_1.png"
+        }
+      },
+      "timestamp": 1793785403.186201,
+      "execution_index": 1
+    },
+    {
+      "type": "browser_internal_step",
+      "data": {
+        "agent": "browser",
+        "step": 1,
+        "call_id": "1:browser",
+        "internal_step": 1,
+        "kind": "browser_use_log",
+        "text": "▶️  [1/6] \u001b[34minput\u001b[0m: \u001b[35mindex\u001b[0m: 132, \u001b[35mtext\u001b[0m: Jackie, \u001b[35mclear\u001b[0m: True"
+      },
+      "timestamp": 1793785403.1901243,
+      "execution_index": 1
+    },
+    {
+      "type": "browser_internal_step",
+      "data": {
+        "agent": "browser",
+        "step": 1,
+        "call_id": "1:browser",
+        "internal_step": 1,
+        "kind": "browser_use_log",
+        "text": "▶️  [2/6] \u001b[34minput\u001b[0m: \u001b[35mindex\u001b[0m: 133, \u001b[35mtext\u001b[0m: Chan, \u001b[35mclear\u001b[0m: True"
+      },
+      "timestamp": 1793785403.5767229,
+      "execution_index": 1
+    },
+    {
+      "type": "browser_internal_step",
+      "data": {
+        "agent": "browser",
+        "step": 1,
+        "call_id": "1:browser",
+        "internal_step": 1,
+        "kind": "browser_use_log",
+        "text": "▶️  [3/6] \u001b[34minput\u001b[0m: \u001b[35mindex\u001b[0m: 134, \u001b[35mtext\u001b[0m: 345 Jack Street, \u001b[35mclear\u001b[0m: True"
+      },
+      "timestamp": 1793785403.924767,
+      "execution_index": 1
+    },
+    {
+      "type": "browser_internal_step",
+      "data": {
+        "agent": "browser",
+        "step": 1,
+        "call_id": "1:browser",
+        "internal_step": 1,
+        "kind": "browser_use_log",
+        "text": "▶️  [4/6] \u001b[34minput\u001b[0m: \u001b[35mindex\u001b[0m: 135, \u001b[35mtext\u001b[0m: Springfield, \u001b[35mclear\u001b[0m: True"
+      },
+      "timestamp": 1793785404.5742972,
+      "execution_index": 1
+    },
+    {
+      "type": "browser_internal_step",
+      "data": {
+        "agent": "browser",
+        "step": 1,
+        "call_id": "1:browser",
+        "internal_step": 1,
+        "kind": "browser_use_log",
+        "text": "▶️  [5/6] \u001b[34minput\u001b[0m: \u001b[35mindex\u001b[0m: 136, \u001b[35mtext\u001b[0m: 7266/61936, \u001b[35mclear\u001b[0m: True"
+      },
+      "timestamp": 1793785405.1251323,
+      "execution_index": 1
+    },
+    {
+      "type": "browser_internal_step",
+      "data": {
+        "agent": "browser",
+        "step": 1,
+        "call_id": "1:browser",
+        "internal_step": 1,
+        "kind": "browser_use_log",
+        "text": "▶️  [6/6] \u001b[34mclick\u001b[0m: \u001b[35mindex\u001b[0m: 320"
+      },
+      "timestamp": 1793785405.6244864,
+      "execution_index": 1
+    },
+    {
+      "type": "browser_internal_step",
+      "data": {
+        "agent": "browser",
+        "step": 1,
+        "call_id": "1:browser",
+        "internal_step": 1,
+        "kind": "browser_use_log",
+        "text": "📋 Plan updated with 3 steps"
+      },
+      "timestamp": 1793785406.4448414,
+      "execution_index": 1
+    },
+    {
+      "type": "browser_internal_step",
+      "data": {
+        "agent": "browser",
+        "step": 1,
+        "call_id": "1:browser",
+        "internal_step": 2,
+        "kind": "browser_use_log",
+        "text": "📍 Step 2:"
+      },
+      "timestamp": 1793785406.9805596,
+      "execution_index": 1
+    },
+    {
+      "type": "browser_internal_step",
+      "data": {
+        "agent": "browser",
+        "step": 1,
+        "call_id": "1:browser",
+        "internal_step": 2,
+        "kind": "browser_use_log",
+        "text": "🧠 Memory: Form filled with Jackie Chan, 345 Jack Street, Springfield, 7266/61936 and submitted. Got validation error on telephone field because '7266/61936' contains a non-numeric character (slash). The owner was NOT successfully added."
+      },
+      "timestamp": 1793785419.0859237,
+      "execution_index": 1
+    },
+    {
+      "type": "browser_internal_step",
+      "data": {
+        "agent": "browser",
+        "step": 1,
+        "call_id": "1:browser",
+        "internal_step": 2,
+        "kind": "screenshot",
+        "screenshot": {
+          "filename": "step_1_2.png",
+          "task_id": "dfbe4e4d-54c4-4aec-b8ef-703165bcaa90",
+          "url": "/api/tasks/dfbe4e4d-54c4-4aec-b8ef-703165bcaa90/screenshots/step_1_2.png"
+        }
+      },
+      "timestamp": 1793785419.2045097,
+      "execution_index": 1
+    },
+    {
+      "type": "browser_internal_step",
+      "data": {
+        "agent": "browser",
+        "step": 1,
+        "call_id": "1:browser",
+        "internal_step": 2,
+        "kind": "browser_use_log",
+        "text": "▶️   \u001b[34mdone\u001b[0m: \u001b[35mtext\u001b[0m: Test case execution result: FAILED\n\nThe Gherkin test case could not be completed successfully. Here's what happened:\n\n**Given:** Navigated to http://l..., \u001b[35msuccess\u001b[0m: False, \u001b[35mfiles_to_display\u001b[0m: []"
+      },
+      "timestamp": 1793785419.207019,
+      "execution_index": 1
+    },
+    {
+      "type": "browser_internal_step",
+      "data": {
+        "agent": "browser",
+        "step": 1,
+        "call_id": "1:browser",
+        "internal_step": 2,
+        "kind": "browser_use_log",
+        "text": "📋 Plan updated with 3 steps"
+      },
+      "timestamp": 1793785419.207024,
+      "execution_index": 1
+    },
+    {
+      "type": "agent_decision",
+      "data": {
+        "step": 1,
+        "agent": "browser",
+        "call_id": "1:browser",
+        "decision_type": "stop",
+        "payload": "Test case execution result: FAILED\n\nThe Gherkin test case could not be completed successfully. Here's what happened:\n\n**Given:** Navigated to http://localhost:8080/owners/new ✓\n\n**When:** Filled in all fields:\n- First Name: Jackie ✓\n- Last Name: Chan ✓\n- Address: 345 Jack Street ✓\n- City: Springfield ✓\n- Telephone: 7266/61936 ✓ (entered as specified)\n- Clicked \"Add Owner\" button ✓\n\n**Then:** \"Jackie Chan\" is added as an owner ✗ FAILED\n\n**Reason for failure:** The application returned a validation error on submission: \"numeric value out of bounds (<10 digits>.<0 digits> expected)\" for the Telephone field. The phone number \"7266/61936\" contains a forward slash (/) which is not a valid numeric character, causing server-side validation to reject it. The owner was NOT added."
+      },
+      "timestamp": 1793785423.5461516,
+      "execution_index": 1
+    },
+    {
+      "type": "step_complete",
+      "data": {
+        "step": 1
+      },
+      "timestamp": 1793785423.5461655,
+      "execution_index": 1
+    },
+    {
+      "type": "stopped",
+      "data": {
+        "step": 1
+      },
+      "timestamp": 1793785423.5461683,
+      "execution_index": 1
+    }
+  ]
+}

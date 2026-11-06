@@ -1,0 +1,311 @@
+{
+  "id": "f60f1dbf-806b-4cf8-af57-14cc21288518",
+  "configuration": "BrowserOnlyConfiguration",
+  "provider": "vllm",
+  "model": "Qwen/Qwen3.8-27B-FP8 - Reasoning OFF",
+  "task": "Given this is the current URL: \"http://localhost:8080/owners/7/pets/9/edit\"\nWhen I change the pet type of \"Jeff Black\"s existing pet \"Lucky\" to \"cat\"\nThen the pet named \"Lucky\" is a \"cat\"",
+  "base_url": "http://localhost:8080/",
+  "num_task_executions": 1,
+  "max_iterations": 50,
+  "vision_enabled": true,
+  "record_video": true,
+  "video_available": true,
+  "archived": true,
+  "undeletable": false,
+  "status": "completed",
+  "current_execution": 1,
+  "error": null,
+  "statistics": {
+    "iterations": 1,
+    "llm_calls": 1,
+    "tokens_by_agent": {
+      "browser": {
+        "prompt_tokens": 31756,
+        "completion_tokens": 1036,
+        "total_tokens": 32792,
+        "calls": 1
+      }
+    },
+    "tokens_total": {
+      "prompt_tokens": 31756,
+      "completion_tokens": 1036,
+      "total_tokens": 32792
+    }
+  },
+  "result": {
+    "step": 1
+  },
+  "created_at": "2026-11-03T14:42:02.571609+00:00",
+  "updated_at": "2026-11-03T14:42:56.336719+00:00",
+  "events": [
+    {
+      "type": "step_start",
+      "data": {
+        "step": 1
+      },
+      "timestamp": 1793716925.5069788,
+      "execution_index": 1
+    },
+    {
+      "type": "browser_internal_step",
+      "data": {
+        "agent": "browser",
+        "step": 1,
+        "call_id": "1:browser",
+        "internal_step": 0,
+        "kind": "browser_use_log",
+        "text": "▶️   \u001b[34mnavigate\u001b[0m: \u001b[35murl\u001b[0m: http://localhost:8080/owners/7/pets/9/edit, \u001b[35mnew_tab\u001b[0m: False"
+      },
+      "timestamp": 1793716926.2102697,
+      "execution_index": 1
+    },
+    {
+      "type": "browser_internal_step",
+      "data": {
+        "agent": "browser",
+        "step": 1,
+        "call_id": "1:browser",
+        "internal_step": 1,
+        "kind": "browser_use_log",
+        "text": "📍 Step 1:"
+      },
+      "timestamp": 1793716927.5316644,
+      "execution_index": 1
+    },
+    {
+      "type": "browser_internal_step",
+      "data": {
+        "agent": "browser",
+        "step": 1,
+        "call_id": "1:browser",
+        "internal_step": 1,
+        "kind": "browser_use_log",
+        "text": "🧠 Memory: On pet edit page for Jeff Black's pet Lucky (currently 'bird'). Need to change type to 'cat' and submit. Type dropdown is [136], Update button is [321]."
+      },
+      "timestamp": 1793716953.3990877,
+      "execution_index": 1
+    },
+    {
+      "type": "browser_internal_step",
+      "data": {
+        "agent": "browser",
+        "step": 1,
+        "call_id": "1:browser",
+        "internal_step": 1,
+        "kind": "screenshot",
+        "screenshot": {
+          "filename": "step_1_1.png",
+          "task_id": "f60f1dbf-806b-4cf8-af57-14cc21288518",
+          "url": "/api/tasks/f60f1dbf-806b-4cf8-af57-14cc21288518/screenshots/step_1_1.png"
+        }
+      },
+      "timestamp": 1793716953.4886785,
+      "execution_index": 1
+    },
+    {
+      "type": "browser_internal_step",
+      "data": {
+        "agent": "browser",
+        "step": 1,
+        "call_id": "1:browser",
+        "internal_step": 1,
+        "kind": "browser_use_log",
+        "text": "▶️   \u001b[34mselect_dropdown\u001b[0m: \u001b[35mindex\u001b[0m: 136, \u001b[35mtext\u001b[0m: cat"
+      },
+      "timestamp": 1793716953.4902866,
+      "execution_index": 1
+    },
+    {
+      "type": "browser_internal_step",
+      "data": {
+        "agent": "browser",
+        "step": 1,
+        "call_id": "1:browser",
+        "internal_step": 1,
+        "kind": "browser_use_log",
+        "text": "📋 Plan updated with 3 steps"
+      },
+      "timestamp": 1793716953.4969466,
+      "execution_index": 1
+    },
+    {
+      "type": "browser_internal_step",
+      "data": {
+        "agent": "browser",
+        "step": 1,
+        "call_id": "1:browser",
+        "internal_step": 2,
+        "kind": "browser_use_log",
+        "text": "📍 Step 2:"
+      },
+      "timestamp": 1793716954.1538613,
+      "execution_index": 1
+    },
+    {
+      "type": "browser_internal_step",
+      "data": {
+        "agent": "browser",
+        "step": 1,
+        "call_id": "1:browser",
+        "internal_step": 2,
+        "kind": "browser_use_log",
+        "text": "🧠 Memory: On pet edit page for Jeff Black's pet Lucky. Changed type from bird to cat. Now need to click Update Pet [321] and verify."
+      },
+      "timestamp": 1793716959.61683,
+      "execution_index": 1
+    },
+    {
+      "type": "browser_internal_step",
+      "data": {
+        "agent": "browser",
+        "step": 1,
+        "call_id": "1:browser",
+        "internal_step": 2,
+        "kind": "screenshot",
+        "screenshot": {
+          "filename": "step_1_2.png",
+          "task_id": "f60f1dbf-806b-4cf8-af57-14cc21288518",
+          "url": "/api/tasks/f60f1dbf-806b-4cf8-af57-14cc21288518/screenshots/step_1_2.png"
+        }
+      },
+      "timestamp": 1793716959.7115803,
+      "execution_index": 1
+    },
+    {
+      "type": "browser_internal_step",
+      "data": {
+        "agent": "browser",
+        "step": 1,
+        "call_id": "1:browser",
+        "internal_step": 2,
+        "kind": "browser_use_log",
+        "text": "▶️   \u001b[34mclick\u001b[0m: \u001b[35mindex\u001b[0m: 321"
+      },
+      "timestamp": 1793716959.7143655,
+      "execution_index": 1
+    },
+    {
+      "type": "browser_internal_step",
+      "data": {
+        "agent": "browser",
+        "step": 1,
+        "call_id": "1:browser",
+        "internal_step": 2,
+        "kind": "browser_use_log",
+        "text": "📋 Plan updated with 3 steps"
+      },
+      "timestamp": 1793716960.7636452,
+      "execution_index": 1
+    },
+    {
+      "type": "browser_internal_step",
+      "data": {
+        "agent": "browser",
+        "step": 1,
+        "call_id": "1:browser",
+        "internal_step": 3,
+        "kind": "browser_use_log",
+        "text": "📍 Step 3:"
+      },
+      "timestamp": 1793716961.408501,
+      "execution_index": 1
+    },
+    {
+      "type": "browser_internal_step",
+      "data": {
+        "agent": "browser",
+        "step": 1,
+        "call_id": "1:browser",
+        "internal_step": 3,
+        "kind": "browser_use_log",
+        "text": "🧠 Memory: Task complete. Changed Jeff Black's pet Lucky from bird to cat, submitted, and verified on owner page that Type now shows 'cat'."
+      },
+      "timestamp": 1793716969.5833259,
+      "execution_index": 1
+    },
+    {
+      "type": "browser_internal_step",
+      "data": {
+        "agent": "browser",
+        "step": 1,
+        "call_id": "1:browser",
+        "internal_step": 3,
+        "kind": "screenshot",
+        "screenshot": {
+          "filename": "step_1_3.png",
+          "task_id": "f60f1dbf-806b-4cf8-af57-14cc21288518",
+          "url": "/api/tasks/f60f1dbf-806b-4cf8-af57-14cc21288518/screenshots/step_1_3.png"
+        }
+      },
+      "timestamp": 1793716969.7645884,
+      "execution_index": 1
+    },
+    {
+      "type": "browser_internal_step",
+      "data": {
+        "agent": "browser",
+        "step": 1,
+        "call_id": "1:browser",
+        "internal_step": 3,
+        "kind": "browser_use_log",
+        "text": "▶️   \u001b[34mdone\u001b[0m: \u001b[35mtext\u001b[0m: Test case executed successfully. ✅\n\n- Given: Navigated to http://localhost:8080/owners/7/pets/9/edit (Jeff Black's pet Lucky edit page)\n- When: Change..., \u001b[35msuccess\u001b[0m: True, \u001b[35mfiles_to_display\u001b[0m: []"
+      },
+      "timestamp": 1793716969.7697697,
+      "execution_index": 1
+    },
+    {
+      "type": "browser_internal_step",
+      "data": {
+        "agent": "browser",
+        "step": 1,
+        "call_id": "1:browser",
+        "internal_step": 3,
+        "kind": "browser_use_log",
+        "text": "📋 Plan updated with 3 steps"
+      },
+      "timestamp": 1793716969.769786,
+      "execution_index": 1
+    },
+    {
+      "type": "browser_internal_step",
+      "data": {
+        "agent": "browser",
+        "step": 1,
+        "call_id": "1:browser",
+        "internal_step": 3,
+        "kind": "browser_use_log",
+        "text": "✅ Task completed successfully"
+      },
+      "timestamp": 1793716970.2265162,
+      "execution_index": 1
+    },
+    {
+      "type": "agent_decision",
+      "data": {
+        "step": 1,
+        "agent": "browser",
+        "call_id": "1:browser",
+        "decision_type": "stop",
+        "payload": "Test case executed successfully. ✅\n\n- Given: Navigated to http://localhost:8080/owners/7/pets/9/edit (Jeff Black's pet Lucky edit page)\n- When: Changed the pet type dropdown from 'bird' to 'cat' and clicked 'Update Pet'\n- Then: Verified on the owner page that the pet named 'Lucky' now has Type = 'cat'\n\nAll assertions passed."
+      },
+      "timestamp": 1793716976.004238,
+      "execution_index": 1
+    },
+    {
+      "type": "step_complete",
+      "data": {
+        "step": 1
+      },
+      "timestamp": 1793716976.0042565,
+      "execution_index": 1
+    },
+    {
+      "type": "completed",
+      "data": {
+        "step": 1
+      },
+      "timestamp": 1793716976.0042598,
+      "execution_index": 1
+    }
+  ]
+}

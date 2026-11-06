@@ -1,0 +1,678 @@
+{
+  "id": "1854c65a-1af1-4d48-ba06-a662aad0eb1b",
+  "configuration": "BrowserOnlyConfiguration",
+  "provider": "vllm",
+  "model": "Qwen/Qwen3.8-27B-FP8 - Reasoning OFF",
+  "task": "Given this is the current URL: \"http://localhost:8080/\"\nWhen I navigate to the \"Find Owners\" section\n\nGiven the \"Find Owners\" section page is open\nWhen I search for an owner with last name \"Cooper\"\nThen the application tells me that none such owner exists\n\nGiven the \"Find Owners\" section page is open\nWhen I navigate to the \"Add Owners\" section\n\nGiven the \"Add Owners\" section page is open\nWhen I add a person with first name \"Angelina\" and last name \"Cooper\" as a new pet owner with address \"357 Second Street\" with city \"Chicago\" and phone number \"6095366426\"\n\nGiven the \"Find Owners\" section page is not open\nWhen I navigate to the \"Find Owners\" section\n\nGiven the \"Find Owners\" section page is open\nWhen I search for an owner with last name \"Cooper\"\nThen the application shows the owner \"Angelina Cooper\" to me",
+  "base_url": "http://localhost:8080/",
+  "num_task_executions": 1,
+  "max_iterations": 50,
+  "vision_enabled": true,
+  "record_video": true,
+  "video_available": true,
+  "archived": true,
+  "undeletable": false,
+  "status": "completed",
+  "current_execution": 1,
+  "error": null,
+  "statistics": {
+    "iterations": 1,
+    "llm_calls": 1,
+    "tokens_by_agent": {
+      "browser": {
+        "prompt_tokens": 74703,
+        "completion_tokens": 3246,
+        "total_tokens": 77949,
+        "calls": 1
+      }
+    },
+    "tokens_total": {
+      "prompt_tokens": 74703,
+      "completion_tokens": 3246,
+      "total_tokens": 77949
+    }
+  },
+  "result": {
+    "step": 1
+  },
+  "created_at": "2026-11-03T20:08:05.245682+00:00",
+  "updated_at": "2026-11-03T20:09:09.841494+00:00",
+  "events": [
+    {
+      "type": "step_start",
+      "data": {
+        "step": 1
+      },
+      "timestamp": 1793736487.8750913,
+      "execution_index": 1
+    },
+    {
+      "type": "browser_internal_step",
+      "data": {
+        "agent": "browser",
+        "step": 1,
+        "call_id": "1:browser",
+        "internal_step": 0,
+        "kind": "browser_use_log",
+        "text": "▶️   \u001b[34mnavigate\u001b[0m: \u001b[35murl\u001b[0m: http://localhost:8080/, \u001b[35mnew_tab\u001b[0m: False"
+      },
+      "timestamp": 1793736489.448842,
+      "execution_index": 1
+    },
+    {
+      "type": "browser_internal_step",
+      "data": {
+        "agent": "browser",
+        "step": 1,
+        "call_id": "1:browser",
+        "internal_step": 1,
+        "kind": "browser_use_log",
+        "text": "📍 Step 1:"
+      },
+      "timestamp": 1793736490.192949,
+      "execution_index": 1
+    },
+    {
+      "type": "browser_internal_step",
+      "data": {
+        "agent": "browser",
+        "step": 1,
+        "call_id": "1:browser",
+        "internal_step": 1,
+        "kind": "browser_use_log",
+        "text": "🧠 Memory: Starting Gherkin test execution on Spring PetClinic app. Step 1: Navigate to Find Owners section."
+      },
+      "timestamp": 1793736493.5774848,
+      "execution_index": 1
+    },
+    {
+      "type": "browser_internal_step",
+      "data": {
+        "agent": "browser",
+        "step": 1,
+        "call_id": "1:browser",
+        "internal_step": 1,
+        "kind": "screenshot",
+        "screenshot": {
+          "filename": "step_1_1.png",
+          "task_id": "1854c65a-1af1-4d48-ba06-a662aad0eb1b",
+          "url": "/api/tasks/1854c65a-1af1-4d48-ba06-a662aad0eb1b/screenshots/step_1_1.png"
+        }
+      },
+      "timestamp": 1793736493.7000384,
+      "execution_index": 1
+    },
+    {
+      "type": "browser_internal_step",
+      "data": {
+        "agent": "browser",
+        "step": 1,
+        "call_id": "1:browser",
+        "internal_step": 1,
+        "kind": "browser_use_log",
+        "text": "▶️   \u001b[34mclick\u001b[0m: \u001b[35mindex\u001b[0m: 188"
+      },
+      "timestamp": 1793736493.7031062,
+      "execution_index": 1
+    },
+    {
+      "type": "browser_internal_step",
+      "data": {
+        "agent": "browser",
+        "step": 1,
+        "call_id": "1:browser",
+        "internal_step": 1,
+        "kind": "browser_use_log",
+        "text": "📋 Plan updated with 6 steps"
+      },
+      "timestamp": 1793736494.6021397,
+      "execution_index": 1
+    },
+    {
+      "type": "browser_internal_step",
+      "data": {
+        "agent": "browser",
+        "step": 1,
+        "call_id": "1:browser",
+        "internal_step": 2,
+        "kind": "browser_use_log",
+        "text": "📍 Step 2:"
+      },
+      "timestamp": 1793736495.2004375,
+      "execution_index": 1
+    },
+    {
+      "type": "browser_internal_step",
+      "data": {
+        "agent": "browser",
+        "step": 1,
+        "call_id": "1:browser",
+        "internal_step": 2,
+        "kind": "browser_use_log",
+        "text": "🧠 Memory: On Find Owners page at /owners/find. Need to search for 'Cooper' first (should find none), then add Angelina Cooper, then search again."
+      },
+      "timestamp": 1793736498.3301132,
+      "execution_index": 1
+    },
+    {
+      "type": "browser_internal_step",
+      "data": {
+        "agent": "browser",
+        "step": 1,
+        "call_id": "1:browser",
+        "internal_step": 2,
+        "kind": "screenshot",
+        "screenshot": {
+          "filename": "step_1_2.png",
+          "task_id": "1854c65a-1af1-4d48-ba06-a662aad0eb1b",
+          "url": "/api/tasks/1854c65a-1af1-4d48-ba06-a662aad0eb1b/screenshots/step_1_2.png"
+        }
+      },
+      "timestamp": 1793736498.464754,
+      "execution_index": 1
+    },
+    {
+      "type": "browser_internal_step",
+      "data": {
+        "agent": "browser",
+        "step": 1,
+        "call_id": "1:browser",
+        "internal_step": 2,
+        "kind": "browser_use_log",
+        "text": "▶️  [1/2] \u001b[34minput\u001b[0m: \u001b[35mindex\u001b[0m: 266, \u001b[35mtext\u001b[0m: Cooper, \u001b[35mclear\u001b[0m: True"
+      },
+      "timestamp": 1793736498.4670482,
+      "execution_index": 1
+    },
+    {
+      "type": "browser_internal_step",
+      "data": {
+        "agent": "browser",
+        "step": 1,
+        "call_id": "1:browser",
+        "internal_step": 2,
+        "kind": "browser_use_log",
+        "text": "▶️  [2/2] \u001b[34mclick\u001b[0m: \u001b[35mindex\u001b[0m: 387"
+      },
+      "timestamp": 1793736498.869083,
+      "execution_index": 1
+    },
+    {
+      "type": "browser_internal_step",
+      "data": {
+        "agent": "browser",
+        "step": 1,
+        "call_id": "1:browser",
+        "internal_step": 2,
+        "kind": "browser_use_log",
+        "text": "📋 Plan updated with 6 steps"
+      },
+      "timestamp": 1793736499.6649148,
+      "execution_index": 1
+    },
+    {
+      "type": "browser_internal_step",
+      "data": {
+        "agent": "browser",
+        "step": 1,
+        "call_id": "1:browser",
+        "internal_step": 3,
+        "kind": "browser_use_log",
+        "text": "📍 Step 3:"
+      },
+      "timestamp": 1793736500.17376,
+      "execution_index": 1
+    },
+    {
+      "type": "browser_internal_step",
+      "data": {
+        "agent": "browser",
+        "step": 1,
+        "call_id": "1:browser",
+        "internal_step": 3,
+        "kind": "browser_use_log",
+        "text": "🧠 Memory: Step 1-2 complete: Navigated to Find Owners, searched for Cooper, confirmed no results. Now need to click 'Add Owner' to go to Add Owners section."
+      },
+      "timestamp": 1793736503.1147528,
+      "execution_index": 1
+    },
+    {
+      "type": "browser_internal_step",
+      "data": {
+        "agent": "browser",
+        "step": 1,
+        "call_id": "1:browser",
+        "internal_step": 3,
+        "kind": "screenshot",
+        "screenshot": {
+          "filename": "step_1_3.png",
+          "task_id": "1854c65a-1af1-4d48-ba06-a662aad0eb1b",
+          "url": "/api/tasks/1854c65a-1af1-4d48-ba06-a662aad0eb1b/screenshots/step_1_3.png"
+        }
+      },
+      "timestamp": 1793736503.2221901,
+      "execution_index": 1
+    },
+    {
+      "type": "browser_internal_step",
+      "data": {
+        "agent": "browser",
+        "step": 1,
+        "call_id": "1:browser",
+        "internal_step": 3,
+        "kind": "browser_use_log",
+        "text": "▶️   \u001b[34mclick\u001b[0m: \u001b[35mindex\u001b[0m: 560"
+      },
+      "timestamp": 1793736503.224929,
+      "execution_index": 1
+    },
+    {
+      "type": "browser_internal_step",
+      "data": {
+        "agent": "browser",
+        "step": 1,
+        "call_id": "1:browser",
+        "internal_step": 3,
+        "kind": "browser_use_log",
+        "text": "📋 Plan updated with 6 steps"
+      },
+      "timestamp": 1793736504.1500645,
+      "execution_index": 1
+    },
+    {
+      "type": "browser_internal_step",
+      "data": {
+        "agent": "browser",
+        "step": 1,
+        "call_id": "1:browser",
+        "internal_step": 4,
+        "kind": "browser_use_log",
+        "text": "📍 Step 4:"
+      },
+      "timestamp": 1793736504.7459872,
+      "execution_index": 1
+    },
+    {
+      "type": "browser_internal_step",
+      "data": {
+        "agent": "browser",
+        "step": 1,
+        "call_id": "1:browser",
+        "internal_step": 4,
+        "kind": "browser_use_log",
+        "text": "🧠 Memory: On Add Owner form at /owners/new. Need to fill in Angelina Cooper's details and submit. Steps 1-2 (search Cooper, confirm none found) are complete."
+      },
+      "timestamp": 1793736509.0351958,
+      "execution_index": 1
+    },
+    {
+      "type": "browser_internal_step",
+      "data": {
+        "agent": "browser",
+        "step": 1,
+        "call_id": "1:browser",
+        "internal_step": 4,
+        "kind": "screenshot",
+        "screenshot": {
+          "filename": "step_1_4.png",
+          "task_id": "1854c65a-1af1-4d48-ba06-a662aad0eb1b",
+          "url": "/api/tasks/1854c65a-1af1-4d48-ba06-a662aad0eb1b/screenshots/step_1_4.png"
+        }
+      },
+      "timestamp": 1793736509.1801622,
+      "execution_index": 1
+    },
+    {
+      "type": "browser_internal_step",
+      "data": {
+        "agent": "browser",
+        "step": 1,
+        "call_id": "1:browser",
+        "internal_step": 4,
+        "kind": "browser_use_log",
+        "text": "▶️  [1/6] \u001b[34minput\u001b[0m: \u001b[35mindex\u001b[0m: 592, \u001b[35mtext\u001b[0m: Angelina, \u001b[35mclear\u001b[0m: True"
+      },
+      "timestamp": 1793736509.1829305,
+      "execution_index": 1
+    },
+    {
+      "type": "browser_internal_step",
+      "data": {
+        "agent": "browser",
+        "step": 1,
+        "call_id": "1:browser",
+        "internal_step": 4,
+        "kind": "browser_use_log",
+        "text": "▶️  [2/6] \u001b[34minput\u001b[0m: \u001b[35mindex\u001b[0m: 593, \u001b[35mtext\u001b[0m: Cooper, \u001b[35mclear\u001b[0m: True"
+      },
+      "timestamp": 1793736509.6375606,
+      "execution_index": 1
+    },
+    {
+      "type": "browser_internal_step",
+      "data": {
+        "agent": "browser",
+        "step": 1,
+        "call_id": "1:browser",
+        "internal_step": 4,
+        "kind": "browser_use_log",
+        "text": "▶️  [3/6] \u001b[34minput\u001b[0m: \u001b[35mindex\u001b[0m: 594, \u001b[35mtext\u001b[0m: 357 Second Street, \u001b[35mclear\u001b[0m: True"
+      },
+      "timestamp": 1793736510.0296135,
+      "execution_index": 1
+    },
+    {
+      "type": "browser_internal_step",
+      "data": {
+        "agent": "browser",
+        "step": 1,
+        "call_id": "1:browser",
+        "internal_step": 4,
+        "kind": "browser_use_log",
+        "text": "▶️  [4/6] \u001b[34minput\u001b[0m: \u001b[35mindex\u001b[0m: 595, \u001b[35mtext\u001b[0m: Chicago, \u001b[35mclear\u001b[0m: True"
+      },
+      "timestamp": 1793736510.716474,
+      "execution_index": 1
+    },
+    {
+      "type": "browser_internal_step",
+      "data": {
+        "agent": "browser",
+        "step": 1,
+        "call_id": "1:browser",
+        "internal_step": 4,
+        "kind": "browser_use_log",
+        "text": "▶️  [5/6] \u001b[34minput\u001b[0m: \u001b[35mindex\u001b[0m: 596, \u001b[35mtext\u001b[0m: 6095366426, \u001b[35mclear\u001b[0m: True"
+      },
+      "timestamp": 1793736511.0915737,
+      "execution_index": 1
+    },
+    {
+      "type": "browser_internal_step",
+      "data": {
+        "agent": "browser",
+        "step": 1,
+        "call_id": "1:browser",
+        "internal_step": 4,
+        "kind": "browser_use_log",
+        "text": "▶️  [6/6] \u001b[34mclick\u001b[0m: \u001b[35mindex\u001b[0m: 780"
+      },
+      "timestamp": 1793736511.5561075,
+      "execution_index": 1
+    },
+    {
+      "type": "browser_internal_step",
+      "data": {
+        "agent": "browser",
+        "step": 1,
+        "call_id": "1:browser",
+        "internal_step": 4,
+        "kind": "browser_use_log",
+        "text": "📋 Plan updated with 6 steps"
+      },
+      "timestamp": 1793736512.6754494,
+      "execution_index": 1
+    },
+    {
+      "type": "browser_internal_step",
+      "data": {
+        "agent": "browser",
+        "step": 1,
+        "call_id": "1:browser",
+        "internal_step": 5,
+        "kind": "browser_use_log",
+        "text": "📍 Step 5:"
+      },
+      "timestamp": 1793736513.2435544,
+      "execution_index": 1
+    },
+    {
+      "type": "browser_internal_step",
+      "data": {
+        "agent": "browser",
+        "step": 1,
+        "call_id": "1:browser",
+        "internal_step": 5,
+        "kind": "browser_use_log",
+        "text": "🧠 Memory: Owner Angelina Cooper added successfully (ID 11). Now need to navigate to Find Owners and search for 'Cooper' to verify she appears in results."
+      },
+      "timestamp": 1793736516.6706264,
+      "execution_index": 1
+    },
+    {
+      "type": "browser_internal_step",
+      "data": {
+        "agent": "browser",
+        "step": 1,
+        "call_id": "1:browser",
+        "internal_step": 5,
+        "kind": "screenshot",
+        "screenshot": {
+          "filename": "step_1_5.png",
+          "task_id": "1854c65a-1af1-4d48-ba06-a662aad0eb1b",
+          "url": "/api/tasks/1854c65a-1af1-4d48-ba06-a662aad0eb1b/screenshots/step_1_5.png"
+        }
+      },
+      "timestamp": 1793736516.7421198,
+      "execution_index": 1
+    },
+    {
+      "type": "browser_internal_step",
+      "data": {
+        "agent": "browser",
+        "step": 1,
+        "call_id": "1:browser",
+        "internal_step": 5,
+        "kind": "browser_use_log",
+        "text": "▶️   \u001b[34mclick\u001b[0m: \u001b[35mindex\u001b[0m: 906"
+      },
+      "timestamp": 1793736516.744285,
+      "execution_index": 1
+    },
+    {
+      "type": "browser_internal_step",
+      "data": {
+        "agent": "browser",
+        "step": 1,
+        "call_id": "1:browser",
+        "internal_step": 5,
+        "kind": "browser_use_log",
+        "text": "📋 Plan updated with 6 steps"
+      },
+      "timestamp": 1793736517.7598574,
+      "execution_index": 1
+    },
+    {
+      "type": "browser_internal_step",
+      "data": {
+        "agent": "browser",
+        "step": 1,
+        "call_id": "1:browser",
+        "internal_step": 6,
+        "kind": "browser_use_log",
+        "text": "📍 Step 6:"
+      },
+      "timestamp": 1793736518.3562763,
+      "execution_index": 1
+    },
+    {
+      "type": "browser_internal_step",
+      "data": {
+        "agent": "browser",
+        "step": 1,
+        "call_id": "1:browser",
+        "internal_step": 6,
+        "kind": "browser_use_log",
+        "text": "🧠 Memory: On Find Owners page. Need to search for 'Cooper' one final time to verify Angelina Cooper appears in results. This is the last step of the Gherkin test."
+      },
+      "timestamp": 1793736521.7408633,
+      "execution_index": 1
+    },
+    {
+      "type": "browser_internal_step",
+      "data": {
+        "agent": "browser",
+        "step": 1,
+        "call_id": "1:browser",
+        "internal_step": 6,
+        "kind": "screenshot",
+        "screenshot": {
+          "filename": "step_1_6.png",
+          "task_id": "1854c65a-1af1-4d48-ba06-a662aad0eb1b",
+          "url": "/api/tasks/1854c65a-1af1-4d48-ba06-a662aad0eb1b/screenshots/step_1_6.png"
+        }
+      },
+      "timestamp": 1793736521.81514,
+      "execution_index": 1
+    },
+    {
+      "type": "browser_internal_step",
+      "data": {
+        "agent": "browser",
+        "step": 1,
+        "call_id": "1:browser",
+        "internal_step": 6,
+        "kind": "browser_use_log",
+        "text": "▶️  [1/2] \u001b[34minput\u001b[0m: \u001b[35mindex\u001b[0m: 1035, \u001b[35mtext\u001b[0m: Cooper, \u001b[35mclear\u001b[0m: True"
+      },
+      "timestamp": 1793736521.8177226,
+      "execution_index": 1
+    },
+    {
+      "type": "browser_internal_step",
+      "data": {
+        "agent": "browser",
+        "step": 1,
+        "call_id": "1:browser",
+        "internal_step": 6,
+        "kind": "browser_use_log",
+        "text": "▶️  [2/2] \u001b[34mclick\u001b[0m: \u001b[35mindex\u001b[0m: 1156"
+      },
+      "timestamp": 1793736522.2150698,
+      "execution_index": 1
+    },
+    {
+      "type": "browser_internal_step",
+      "data": {
+        "agent": "browser",
+        "step": 1,
+        "call_id": "1:browser",
+        "internal_step": 6,
+        "kind": "browser_use_log",
+        "text": "📋 Plan updated with 6 steps"
+      },
+      "timestamp": 1793736523.0487204,
+      "execution_index": 1
+    },
+    {
+      "type": "browser_internal_step",
+      "data": {
+        "agent": "browser",
+        "step": 1,
+        "call_id": "1:browser",
+        "internal_step": 7,
+        "kind": "browser_use_log",
+        "text": "📍 Step 7:"
+      },
+      "timestamp": 1793736523.6523454,
+      "execution_index": 1
+    },
+    {
+      "type": "browser_internal_step",
+      "data": {
+        "agent": "browser",
+        "step": 1,
+        "call_id": "1:browser",
+        "internal_step": 7,
+        "kind": "browser_use_log",
+        "text": "🧠 Memory: All Gherkin test steps completed successfully. The full test flow was: (1) Find Owners → search Cooper → no results, (2) Add Owner → Angelina Cooper with correct details, (3) Find Owners → search Cooper → Angelina Cooper shown. All assertions passed."
+      },
+      "timestamp": 1793736530.2777948,
+      "execution_index": 1
+    },
+    {
+      "type": "browser_internal_step",
+      "data": {
+        "agent": "browser",
+        "step": 1,
+        "call_id": "1:browser",
+        "internal_step": 7,
+        "kind": "screenshot",
+        "screenshot": {
+          "filename": "step_1_7.png",
+          "task_id": "1854c65a-1af1-4d48-ba06-a662aad0eb1b",
+          "url": "/api/tasks/1854c65a-1af1-4d48-ba06-a662aad0eb1b/screenshots/step_1_7.png"
+        }
+      },
+      "timestamp": 1793736530.3627062,
+      "execution_index": 1
+    },
+    {
+      "type": "browser_internal_step",
+      "data": {
+        "agent": "browser",
+        "step": 1,
+        "call_id": "1:browser",
+        "internal_step": 7,
+        "kind": "browser_use_log",
+        "text": "▶️   \u001b[34mdone\u001b[0m: \u001b[35mtext\u001b[0m: Gherkin test case executed successfully on Spring PetClinic (http://localhost:8080/). All steps passed:\n\n1. **Given** current URL is http://localhost:..., \u001b[35msuccess\u001b[0m: True, \u001b[35mfiles_to_display\u001b[0m: []"
+      },
+      "timestamp": 1793736530.3658414,
+      "execution_index": 1
+    },
+    {
+      "type": "browser_internal_step",
+      "data": {
+        "agent": "browser",
+        "step": 1,
+        "call_id": "1:browser",
+        "internal_step": 7,
+        "kind": "browser_use_log",
+        "text": "📋 Plan updated with 6 steps"
+      },
+      "timestamp": 1793736530.365847,
+      "execution_index": 1
+    },
+    {
+      "type": "browser_internal_step",
+      "data": {
+        "agent": "browser",
+        "step": 1,
+        "call_id": "1:browser",
+        "internal_step": 7,
+        "kind": "browser_use_log",
+        "text": "✅ Task completed successfully"
+      },
+      "timestamp": 1793736530.8373537,
+      "execution_index": 1
+    },
+    {
+      "type": "agent_decision",
+      "data": {
+        "step": 1,
+        "agent": "browser",
+        "call_id": "1:browser",
+        "decision_type": "stop",
+        "payload": "Gherkin test case executed successfully on Spring PetClinic (http://localhost:8080/). All steps passed:\n\n1. **Given** current URL is http://localhost:8080/ ✅\n2. **When** navigated to \"Find Owners\" section ✅\n3. **When** searched for owner with last name \"Cooper\" → **Then** application told me no such owner exists (\"has not been found\") ✅\n4. **When** navigated to \"Add Owners\" section ✅\n5. **When** added person with first name \"Angelina\", last name \"Cooper\", address \"357 Second Street\", city \"Chicago\", phone \"6095366426\" as new pet owner ✅\n6. **When** navigated back to \"Find Owners\" section ✅\n7. **When** searched for owner with last name \"Cooper\" → **Then** application shows the owner \"Angelina Cooper\" ✅\n\nFinal verification on /owners/11 confirms all details are correct:\n- Name: Angelina Cooper\n- Address: 357 Second Street\n- City: Chicago\n- Telephone: 6095366426"
+      },
+      "timestamp": 1793736535.052265,
+      "execution_index": 1
+    },
+    {
+      "type": "step_complete",
+      "data": {
+        "step": 1
+      },
+      "timestamp": 1793736535.0522754,
+      "execution_index": 1
+    },
+    {
+      "type": "completed",
+      "data": {
+        "step": 1
+      },
+      "timestamp": 1793736535.0522783,
+      "execution_index": 1
+    }
+  ]
+}

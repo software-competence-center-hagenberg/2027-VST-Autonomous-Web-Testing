@@ -1,0 +1,449 @@
+{
+  "id": "ade5efaf-fefb-42d1-bf79-d1dd9a448e14",
+  "configuration": "BrowserOnlyConfiguration",
+  "provider": "vllm",
+  "model": "Qwen/Qwen3.8-27B-FP8 - Reasoning OFF",
+  "task": "Given this is the current URL: \"http://localhost:8080/\"\nWhen I navigate to the overview of the veterinarians\n\nGiven the first page with an overview of the veterinarians is open\nWhen I search for every veterinarian with speciality \"none\" on every veterinarian page\nThen I find 2 veterinarians\n\nGiven the current page is any page of the veterinarians overview\nWhen I navigate to the first page of the overview of the veterinarians\n\nGiven the first page with an overview of the veterinarians is open\nWhen I search for every veterinarian with speciality \"radiology\" on every veterinarian page\nThen I find 2 veterinarians",
+  "base_url": "http://localhost:8080/",
+  "num_task_executions": 1,
+  "max_iterations": 50,
+  "vision_enabled": true,
+  "record_video": true,
+  "video_available": true,
+  "archived": true,
+  "undeletable": false,
+  "status": "completed",
+  "current_execution": 1,
+  "error": null,
+  "statistics": {
+    "iterations": 1,
+    "llm_calls": 1,
+    "tokens_by_agent": {
+      "browser": {
+        "prompt_tokens": 52947,
+        "completion_tokens": 2249,
+        "total_tokens": 55196,
+        "calls": 1
+      }
+    },
+    "tokens_total": {
+      "prompt_tokens": 52947,
+      "completion_tokens": 2249,
+      "total_tokens": 55196
+    }
+  },
+  "result": {
+    "step": 1
+  },
+  "created_at": "2026-11-03T21:13:26.873792+00:00",
+  "updated_at": "2026-11-03T21:13:55.934901+00:00",
+  "events": [
+    {
+      "type": "step_start",
+      "data": {
+        "step": 1
+      },
+      "timestamp": 1793740409.1438673,
+      "execution_index": 1
+    },
+    {
+      "type": "browser_internal_step",
+      "data": {
+        "agent": "browser",
+        "step": 1,
+        "call_id": "1:browser",
+        "internal_step": 0,
+        "kind": "browser_use_log",
+        "text": "▶️   \u001b[34mnavigate\u001b[0m: \u001b[35murl\u001b[0m: http://localhost:8080/, \u001b[35mnew_tab\u001b[0m: False"
+      },
+      "timestamp": 1793740409.6899614,
+      "execution_index": 1
+    },
+    {
+      "type": "browser_internal_step",
+      "data": {
+        "agent": "browser",
+        "step": 1,
+        "call_id": "1:browser",
+        "internal_step": 1,
+        "kind": "browser_use_log",
+        "text": "📍 Step 1:"
+      },
+      "timestamp": 1793740410.4534683,
+      "execution_index": 1
+    },
+    {
+      "type": "browser_internal_step",
+      "data": {
+        "agent": "browser",
+        "step": 1,
+        "call_id": "1:browser",
+        "internal_step": 1,
+        "kind": "browser_use_log",
+        "text": "🧠 Memory: Starting Gherkin test execution on Spring PetClinic app. Need to: 1) Go to veterinarians, 2) Find vets with speciality 'none' (expect 2), 3) Go back to first page, 4) Find vets with speciality 'radiology' (expect 2)."
+      },
+      "timestamp": 1793740413.1520038,
+      "execution_index": 1
+    },
+    {
+      "type": "browser_internal_step",
+      "data": {
+        "agent": "browser",
+        "step": 1,
+        "call_id": "1:browser",
+        "internal_step": 1,
+        "kind": "screenshot",
+        "screenshot": {
+          "filename": "step_1_1.png",
+          "task_id": "ade5efaf-fefb-42d1-bf79-d1dd9a448e14",
+          "url": "/api/tasks/ade5efaf-fefb-42d1-bf79-d1dd9a448e14/screenshots/step_1_1.png"
+        }
+      },
+      "timestamp": 1793740413.2288203,
+      "execution_index": 1
+    },
+    {
+      "type": "browser_internal_step",
+      "data": {
+        "agent": "browser",
+        "step": 1,
+        "call_id": "1:browser",
+        "internal_step": 1,
+        "kind": "browser_use_log",
+        "text": "▶️   \u001b[34mclick\u001b[0m: \u001b[35mindex\u001b[0m: 199"
+      },
+      "timestamp": 1793740413.2308526,
+      "execution_index": 1
+    },
+    {
+      "type": "browser_internal_step",
+      "data": {
+        "agent": "browser",
+        "step": 1,
+        "call_id": "1:browser",
+        "internal_step": 1,
+        "kind": "browser_use_log",
+        "text": "📋 Plan updated with 5 steps"
+      },
+      "timestamp": 1793740414.0700474,
+      "execution_index": 1
+    },
+    {
+      "type": "browser_internal_step",
+      "data": {
+        "agent": "browser",
+        "step": 1,
+        "call_id": "1:browser",
+        "internal_step": 2,
+        "kind": "browser_use_log",
+        "text": "📍 Step 2:"
+      },
+      "timestamp": 1793740414.5928,
+      "execution_index": 1
+    },
+    {
+      "type": "browser_internal_step",
+      "data": {
+        "agent": "browser",
+        "step": 1,
+        "call_id": "1:browser",
+        "internal_step": 2,
+        "kind": "browser_use_log",
+        "text": "🧠 Memory: Page 1 vets: James Carter (none), Helen Leary (radiology), Linda Douglas (dentistry/surgery), Rafael Ortega (surgery), Henry Stevens (radiology). Found 1 vet with 'none' so far. Need to check page 2."
+      },
+      "timestamp": 1793740417.7106655,
+      "execution_index": 1
+    },
+    {
+      "type": "browser_internal_step",
+      "data": {
+        "agent": "browser",
+        "step": 1,
+        "call_id": "1:browser",
+        "internal_step": 2,
+        "kind": "screenshot",
+        "screenshot": {
+          "filename": "step_1_2.png",
+          "task_id": "ade5efaf-fefb-42d1-bf79-d1dd9a448e14",
+          "url": "/api/tasks/ade5efaf-fefb-42d1-bf79-d1dd9a448e14/screenshots/step_1_2.png"
+        }
+      },
+      "timestamp": 1793740417.8450925,
+      "execution_index": 1
+    },
+    {
+      "type": "browser_internal_step",
+      "data": {
+        "agent": "browser",
+        "step": 1,
+        "call_id": "1:browser",
+        "internal_step": 2,
+        "kind": "browser_use_log",
+        "text": "▶️   \u001b[34mclick\u001b[0m: \u001b[35mindex\u001b[0m: 455"
+      },
+      "timestamp": 1793740417.8469312,
+      "execution_index": 1
+    },
+    {
+      "type": "browser_internal_step",
+      "data": {
+        "agent": "browser",
+        "step": 1,
+        "call_id": "1:browser",
+        "internal_step": 2,
+        "kind": "browser_use_log",
+        "text": "📋 Plan updated with 5 steps"
+      },
+      "timestamp": 1793740418.7450879,
+      "execution_index": 1
+    },
+    {
+      "type": "browser_internal_step",
+      "data": {
+        "agent": "browser",
+        "step": 1,
+        "call_id": "1:browser",
+        "internal_step": 3,
+        "kind": "browser_use_log",
+        "text": "📍 Step 3:"
+      },
+      "timestamp": 1793740419.3525777,
+      "execution_index": 1
+    },
+    {
+      "type": "browser_internal_step",
+      "data": {
+        "agent": "browser",
+        "step": 1,
+        "call_id": "1:browser",
+        "internal_step": 3,
+        "kind": "browser_use_log",
+        "text": "🧠 Memory: Vets with speciality 'none': James Carter (page 1), Sharon Jenkins (page 2) = 2 total ✓. Now need to go back to page 1 and search for 'radiology' vets. From page 1 I recall Helen Leary and Henry Stevens had radiology."
+      },
+      "timestamp": 1793740422.6071682,
+      "execution_index": 1
+    },
+    {
+      "type": "browser_internal_step",
+      "data": {
+        "agent": "browser",
+        "step": 1,
+        "call_id": "1:browser",
+        "internal_step": 3,
+        "kind": "screenshot",
+        "screenshot": {
+          "filename": "step_1_3.png",
+          "task_id": "ade5efaf-fefb-42d1-bf79-d1dd9a448e14",
+          "url": "/api/tasks/ade5efaf-fefb-42d1-bf79-d1dd9a448e14/screenshots/step_1_3.png"
+        }
+      },
+      "timestamp": 1793740422.6908042,
+      "execution_index": 1
+    },
+    {
+      "type": "browser_internal_step",
+      "data": {
+        "agent": "browser",
+        "step": 1,
+        "call_id": "1:browser",
+        "internal_step": 3,
+        "kind": "browser_use_log",
+        "text": "▶️   \u001b[34mclick\u001b[0m: \u001b[35mindex\u001b[0m: 651"
+      },
+      "timestamp": 1793740422.6931133,
+      "execution_index": 1
+    },
+    {
+      "type": "browser_internal_step",
+      "data": {
+        "agent": "browser",
+        "step": 1,
+        "call_id": "1:browser",
+        "internal_step": 3,
+        "kind": "browser_use_log",
+        "text": "📋 Plan updated with 5 steps"
+      },
+      "timestamp": 1793740423.6361582,
+      "execution_index": 1
+    },
+    {
+      "type": "browser_internal_step",
+      "data": {
+        "agent": "browser",
+        "step": 1,
+        "call_id": "1:browser",
+        "internal_step": 4,
+        "kind": "browser_use_log",
+        "text": "📍 Step 4:"
+      },
+      "timestamp": 1793740424.1772916,
+      "execution_index": 1
+    },
+    {
+      "type": "browser_internal_step",
+      "data": {
+        "agent": "browser",
+        "step": 1,
+        "call_id": "1:browser",
+        "internal_step": 4,
+        "kind": "browser_use_log",
+        "text": "🧠 Memory: On page 1, found 2 vets with 'radiology': Helen Leary and Henry Stevens. Need to check page 2 for any additional radiology vets."
+      },
+      "timestamp": 1793740426.9142575,
+      "execution_index": 1
+    },
+    {
+      "type": "browser_internal_step",
+      "data": {
+        "agent": "browser",
+        "step": 1,
+        "call_id": "1:browser",
+        "internal_step": 4,
+        "kind": "screenshot",
+        "screenshot": {
+          "filename": "step_1_4.png",
+          "task_id": "ade5efaf-fefb-42d1-bf79-d1dd9a448e14",
+          "url": "/api/tasks/ade5efaf-fefb-42d1-bf79-d1dd9a448e14/screenshots/step_1_4.png"
+        }
+      },
+      "timestamp": 1793740426.9942055,
+      "execution_index": 1
+    },
+    {
+      "type": "browser_internal_step",
+      "data": {
+        "agent": "browser",
+        "step": 1,
+        "call_id": "1:browser",
+        "internal_step": 4,
+        "kind": "browser_use_log",
+        "text": "▶️   \u001b[34mclick\u001b[0m: \u001b[35mindex\u001b[0m: 903"
+      },
+      "timestamp": 1793740426.9969263,
+      "execution_index": 1
+    },
+    {
+      "type": "browser_internal_step",
+      "data": {
+        "agent": "browser",
+        "step": 1,
+        "call_id": "1:browser",
+        "internal_step": 4,
+        "kind": "browser_use_log",
+        "text": "📋 Plan updated with 5 steps"
+      },
+      "timestamp": 1793740427.9234083,
+      "execution_index": 1
+    },
+    {
+      "type": "browser_internal_step",
+      "data": {
+        "agent": "browser",
+        "step": 1,
+        "call_id": "1:browser",
+        "internal_step": 5,
+        "kind": "browser_use_log",
+        "text": "📍 Step 5:"
+      },
+      "timestamp": 1793740428.476245,
+      "execution_index": 1
+    },
+    {
+      "type": "browser_internal_step",
+      "data": {
+        "agent": "browser",
+        "step": 1,
+        "call_id": "1:browser",
+        "internal_step": 5,
+        "kind": "browser_use_log",
+        "text": "🧠 Memory: Completed full search across both pages. Speciality 'none': James Carter (p1), Sharon Jenkins (p2) = 2 ✓. Speciality 'radiology': Helen Leary (p1), Henry Stevens (p1) = 2 ✓. Both test cases pass."
+      },
+      "timestamp": 1793740432.4541225,
+      "execution_index": 1
+    },
+    {
+      "type": "browser_internal_step",
+      "data": {
+        "agent": "browser",
+        "step": 1,
+        "call_id": "1:browser",
+        "internal_step": 5,
+        "kind": "screenshot",
+        "screenshot": {
+          "filename": "step_1_5.png",
+          "task_id": "ade5efaf-fefb-42d1-bf79-d1dd9a448e14",
+          "url": "/api/tasks/ade5efaf-fefb-42d1-bf79-d1dd9a448e14/screenshots/step_1_5.png"
+        }
+      },
+      "timestamp": 1793740432.5610955,
+      "execution_index": 1
+    },
+    {
+      "type": "browser_internal_step",
+      "data": {
+        "agent": "browser",
+        "step": 1,
+        "call_id": "1:browser",
+        "internal_step": 5,
+        "kind": "browser_use_log",
+        "text": "▶️   \u001b[34mdone\u001b[0m: \u001b[35mtext\u001b[0m: Gherkin test case execution completed successfully. Both scenarios PASSED:\n\n**Scenario 1: Search for vets with speciality \"none\"**\n- Page 1: James Car..., \u001b[35msuccess\u001b[0m: True, \u001b[35mfiles_to_display\u001b[0m: []"
+      },
+      "timestamp": 1793740432.5648832,
+      "execution_index": 1
+    },
+    {
+      "type": "browser_internal_step",
+      "data": {
+        "agent": "browser",
+        "step": 1,
+        "call_id": "1:browser",
+        "internal_step": 5,
+        "kind": "browser_use_log",
+        "text": "📋 Plan updated with 5 steps"
+      },
+      "timestamp": 1793740432.564897,
+      "execution_index": 1
+    },
+    {
+      "type": "browser_internal_step",
+      "data": {
+        "agent": "browser",
+        "step": 1,
+        "call_id": "1:browser",
+        "internal_step": 5,
+        "kind": "browser_use_log",
+        "text": "✅ Task completed successfully"
+      },
+      "timestamp": 1793740433.0219083,
+      "execution_index": 1
+    },
+    {
+      "type": "agent_decision",
+      "data": {
+        "step": 1,
+        "agent": "browser",
+        "call_id": "1:browser",
+        "decision_type": "stop",
+        "payload": "Gherkin test case execution completed successfully. Both scenarios PASSED:\n\n**Scenario 1: Search for vets with speciality \"none\"**\n- Page 1: James Carter — none\n- Page 2: Sharon Jenkins — none\n- **Total found: 2 veterinarians** ✅ (expected: 2)\n\n**Scenario 2: Search for vets with speciality \"radiology\"**\n- Page 1: Helen Leary — radiology, Henry Stevens — radiology\n- Page 2: No radiology vets\n- **Total found: 2 veterinarians** ✅ (expected: 2)\n\nAll assertions in the Gherkin test case were satisfied."
+      },
+      "timestamp": 1793740435.6381838,
+      "execution_index": 1
+    },
+    {
+      "type": "step_complete",
+      "data": {
+        "step": 1
+      },
+      "timestamp": 1793740435.6382055,
+      "execution_index": 1
+    },
+    {
+      "type": "completed",
+      "data": {
+        "step": 1
+      },
+      "timestamp": 1793740435.638211,
+      "execution_index": 1
+    }
+  ]
+}

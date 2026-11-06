@@ -1,0 +1,10 @@
+{
+  "vllm": [
+    "Qwen/Qwen3.8-27B-FP8 - Reasoning OFF",    
+    "VnimanieAI/Qwen3.8-Flash-Next-W4A16 - Reasoning OFF",
+    "casperhansen/llama-3.3-70b-instruct-awq",
+    "Qwen/Qwen2.5-Coder-32B-Instruct-AWQ"
+  ],
+  "azure": [],
+  "openai": []
+}
