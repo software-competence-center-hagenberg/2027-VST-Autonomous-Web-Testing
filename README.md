@@ -31,7 +31,8 @@ workflows and handling invalid test inputs.
 .
 ├── Demonstrator-Tool/   Source code of the autonomous web testing demonstrator
 ├── Scenarios/           The 15 Gherkin test scenarios used in the evaluation
-└── Results/             Detailed per-run results of all experiments
+├── Results/             Detailed per-run results of all experiments
+└── results-table.md     Aggregated results (per-scenario and overall)
 ```
 
 - **`Demonstrator-Tool/`** — the demonstrator implementation: a FastAPI
@@ -49,6 +50,23 @@ workflows and handling invalid test inputs.
 
 - **`Results/`** — the raw results of every run, organized by scenario and
   agent configuration (see below).
+
+- **[`results-table.md`](results-table.md)** — the aggregated results: the
+  per-scenario table, category and overall aggregates, and the hallucination
+  analysis that underlie the main results table in the paper.
+
+## System under test
+
+The scenarios target the open-source
+[PetClinic](https://spring-petclinic.github.io/) application, a web
+application for managing pet owners, their pets, and veterinary visits. In the
+experiments it was deployed from the Docker image
+`jbrisbin/spring-petclinic` and served at `http://localhost:8080`, which is
+the base URL referenced by all scenarios. To run it locally:
+
+```bash
+docker run -d -p 8080:8080 jbrisbin/spring-petclinic
+```
 
 ## Results directory
 
@@ -96,3 +114,17 @@ These artifacts are the basis for the manual evaluation described in the
 paper: the recorded video, per-step screenshots, and action trace were used to
 judge whether each run was actually correct, independent of the success or
 failure the agent reported.
+
+### Viewing the results in the Demonstrator
+
+The results can be replayed in the Demonstrator tool. The backend loads every
+task record it finds in `backend/tasks/` on startup, so to view a run:
+
+1. Copy the run's `<task-id>.json` file **and** the `<task-id>/` directory
+   (containing `screenshots/` and `video/`) into
+   `Demonstrator-Tool/backend/tasks/`.
+2. Start the tool (see [Demonstrator-Tool/README.md](Demonstrator-Tool/README.md)).
+
+The run then appears in the task list, and you can open its full event
+transcript, step screenshots, and video recording exactly as during the
+original execution.
