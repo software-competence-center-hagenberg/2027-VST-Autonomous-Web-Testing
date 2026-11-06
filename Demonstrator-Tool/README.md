@@ -44,7 +44,7 @@ OpenAI, or any OpenAI-compatible (e.g. vLLM) model provider.
 
    ```bash
    cd backend
-   uv sync
+   uv sync --extra autogen --python 3.12
    uv run playwright install chromium
    cd ../frontend
    npm install
