@@ -32,23 +32,23 @@ OpenAI, or any OpenAI-compatible (e.g. vLLM) model provider.
 1. Copy the backend environment template and fill in your provider
    credentials:
 
-   ```powershell
-   Copy-Item backend\.env.example backend\.env
+   ```bash
+   cp backend/.env.example backend/.env
    ```
 
-   Edit `backend\.env` and set at least one provider (vLLM/OpenAI-compatible,
+   Edit `backend/.env` and set at least one provider (vLLM/OpenAI-compatible,
    Azure OpenAI, or OpenAI). Models are discovered at runtime, so no model
    names are configured here.
 
 2. Install the backend and frontend dependencies:
 
-   ```powershell
-   Set-Location backend
+   ```bash
+   cd backend
    uv sync
    uv run playwright install chromium
-   Set-Location ..\frontend
+   cd ../frontend
    npm install
-   Set-Location ..
+   cd ..
    ```
 
 3. Run the demonstration. Either use the launcher, which starts the backend
@@ -64,15 +64,15 @@ OpenAI, or any OpenAI-compatible (e.g. vLLM) model provider.
 
    or run the two services yourself in separate terminals:
 
-   ```powershell
+   ```bash
    # Backend
-   Set-Location backend
+   cd backend
    uv run uvicorn main:app
    ```
 
-   ```powershell
+   ```bash
    # Frontend
-   Set-Location frontend
+   cd frontend
    npm run dev
    ```
 
