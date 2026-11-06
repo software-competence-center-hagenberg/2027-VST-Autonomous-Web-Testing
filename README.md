@@ -37,6 +37,7 @@ workflows and handling invalid test inputs.
 ├── Scenarios/           The 15 Gherkin test scenarios used in the evaluation
 ├── Results/             Detailed per-run results of all experiments
 ├── doc/                 Figures (e.g. screenshot of the Demonstrator UI)
+├── agent-configurations.md  Detailed description of the four agent configurations
 └── results-table.md     Aggregated results (per-scenario and overall)
 ```
 
@@ -46,6 +47,10 @@ workflows and handling invalid test inputs.
   the `browser-use`/Chromium browser automation. See
   [Demonstrator-Tool/README.md](Demonstrator-Tool/README.md) for setup and
   usage.
+
+- **[`agent-configurations.md`](agent-configurations.md)** — a detailed
+  description of the four agent configurations: the roles of the individual
+  agents, the prompts used for each, and the conversation flow between them.
 
 - **`Scenarios/`** — the 15 Gherkin test scenarios evaluated in the paper,
   grouped by category:
