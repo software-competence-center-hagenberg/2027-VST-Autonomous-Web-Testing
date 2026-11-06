@@ -30,6 +30,7 @@ workflows and handling invalid test inputs.
 ```text
 .
 ├── Demonstrator-Tool/   Source code of the autonomous web testing demonstrator
+├── Scenarios/           The 15 Gherkin test scenarios used in the evaluation
 └── Results/             Detailed per-run results of all experiments
 ```
 
@@ -39,6 +40,12 @@ workflows and handling invalid test inputs.
   the `browser-use`/Chromium browser automation. See
   [Demonstrator-Tool/README.md](Demonstrator-Tool/README.md) for setup and
   usage.
+
+- **`Scenarios/`** — the 15 Gherkin test scenarios evaluated in the paper,
+  grouped by category:
+  - [simple-scenarios.md](Scenarios/simple-scenarios.md) — `S1`–`S9`
+  - [complex-scenarios.md](Scenarios/complex-scenarios.md) — `C10`–`C12`
+  - [negative-scenarios.md](Scenarios/negative-scenarios.md) — `N13`–`N15`
 
 - **`Results/`** — the raw results of every run, organized by scenario and
   agent configuration (see below).
@@ -58,6 +65,8 @@ paper, grouped by category:
 | `S1` – `S9` | Simple | Single-step or short, straightforward scenarios. |
 | `C10` – `C12` | Complex | Multi-step scenarios with longer workflows. |
 | `N13` – `N15` | Negative | Scenarios with invalid inputs where the expected behavior is for the agent to stop and report failure. |
+
+The full text of each scenario is available in the [`Scenarios/`](Scenarios/) directory.
 
 ### Configurations
 
